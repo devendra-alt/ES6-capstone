@@ -1,3 +1,14 @@
+{
+  "name": "es6-capstone",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "lint": "hint . && npx stylelint \"**/*.{css,scss}\" && eslint .",
+    "stylelint": "npx stylelint \"**/*.{css,scss}\" --fix"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.8.1",
@@ -16,3 +27,12 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "overrides": {
+    "@hint/utils-network": {
+      "node-fetch": "^2"
+    }
+  }
+}
