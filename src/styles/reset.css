@@ -16,7 +16,7 @@ html {
   font-size: 10px;
 }
 
-/* Remove default margin */
+/* Remove default margin padding */
 * {
   padding: 0;
   margin: 0;
@@ -37,9 +37,6 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Inter', sans-serif;
 }
 
