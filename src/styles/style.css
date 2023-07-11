@@ -87,13 +87,14 @@ footer {
 .comment-popup {
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 10rem;
   right: 0;
   z-index: 100;
   background-color: #fff;
   display: block;
-  width: 100%;
+  width: 70%;
   position: absolute;
+  border: 0.5rem solid #000;
 }
 
 .comment-popup-img {
@@ -122,6 +123,10 @@ footer {
 }
 
 @media (min-width: 764px) {
+  .comment-popup {
+    left: 20rem;
+  }
+
   .comment-popup-img {
     width: 40rem;
     height: 30rem;
