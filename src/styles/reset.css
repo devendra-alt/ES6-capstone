@@ -1,5 +1,7 @@
 /* https://piccalil.li/blog/a-modern-css-reset */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
+
 /* Box sizing rules */
 *,
 *::before,
@@ -38,6 +40,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Inter', sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
