@@ -1,3 +1,83 @@
-h1 {
+.logo {
+  width: 10rem;
+  height: 10rem;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
   font-size: 1.4rem;
+  gap: 5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+svg {
+  width: 20px;
+  height: 15px;
+}
+
+footer {
+  border-top: 0.3rem solid #000;
+  height: 5rem;
+  font-size: 1.4rem;
+}
+
+.footer-text {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav_link img {
+  width: 70px;
+  height: 50px;
+  border-radius: 45%;
+  margin: 10px;
+}
+
+#imgg img {
+  width: 110px;
+  height: 95px;
+}
+
+.interactive-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_link ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-left: 700px;
+}
+
+.section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.body_sec {
+  display: flex;
+}
+
+.body_sec2 {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
 }
