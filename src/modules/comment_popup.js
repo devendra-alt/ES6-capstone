@@ -1,4 +1,4 @@
-import MealDb from './mealDB';
+import MealDb from './mealDB.js';
 import exit from '../assets/exit.svg';
 
 const createMealDetailsListEl = (meal) => {
@@ -9,9 +9,9 @@ const createMealDetailsListEl = (meal) => {
 
   mealDetailsList.classList.add('comment-popup-meal-details-list');
 
-  mealCategoryEl.innerText = `Meal Category : ` + meal.strCategory;
-  mealRegionEl.innerText = `Meal Region : ` + meal.strArea;
-  mealTag.innerText = `Meal Tags : ` + meal.strTags;
+  mealCategoryEl.innerText = `Meal Category : ${meal.strCategory}`;
+  mealRegionEl.innerText = `Meal Region : ${meal.strArea}`;
+  mealTag.innerText = `Meal Tags : ${meal.strTags}`;
 
   mealDetailsList.appendChild(mealCategoryEl);
   mealDetailsList.appendChild(mealRegionEl);
@@ -58,7 +58,6 @@ const commentPopUp = (id) => {
     if (e.target.classList.contains('comment-btn')) {
       const mealDb = new MealDb();
       const meal = await mealDb.lookUpMeal(id);
-      console.log(meal);
       renderCommentPopUp(meal);
     }
   });

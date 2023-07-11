@@ -1,9 +1,11 @@
 class MealDb {
   #URL;
+
   #LOOKUP;
+
   constructor() {
-    this.#URL = `https://www.themealdb.com/api/json/v1/1/`;
-    this.#LOOKUP = `lookup.php?i=`;
+    this.#URL = 'https://www.themealdb.com/api/json/v1/1/';
+    this.#LOOKUP = 'lookup.php?i=';
   }
 
   async lookUpMeal(id) {
@@ -12,19 +14,11 @@ class MealDb {
         method: 'GET',
       });
       const data = await res.json();
-      return this.extractData(data);
+      return data.meals[0];
     } catch (error) {
-      console.log(error);
+      throw new Error(error);
     }
   }
-
-  extractData = (data) => {
-    for (const key in data) {
-      if (Object.hasOwnProperty.call(data, key)) {
-        return data[key][0];
-      }
-    }
-  };
 }
 
 export default MealDb;
