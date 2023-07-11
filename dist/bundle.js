@@ -20,6 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap);"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/* https://piccalil.li/blog/a-modern-css-reset */
 
@@ -37,7 +38,7 @@ html {
   font-size: 10px;
 }
 
-/* Remove default margin */
+/* Remove default margin padding */
 * {
   padding: 0;
   margin: 0;
@@ -58,9 +59,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: 'Inter', sans-serif;
+  position: relative;
 }
 
 /* A elements that don't have a class get default styles */
@@ -98,7 +98,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/reset.css"],"names":[],"mappings":"AAAA,gDAAgD;;AAEhD,qBAAqB;AACrB;;;EAGE,sBAAsB;EACtB,2BAA2B;AAC7B;;AAEA,cAAc;;AAEd;EACE,eAAe;AACjB;;AAEA,0BAA0B;AAC1B;EACE,UAAU;EACV,SAAS;AACX;AACA,2GAA2G;AAC3G;;EAEE,gBAAgB;AAClB;;AAEA,2BAA2B;AAC3B;EACE,uBAAuB;AACzB;;AAEA,2BAA2B;AAC3B;EACE,iBAAiB;EACjB,6BAA6B;EAC7B,gBAAgB;EAChB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA,0DAA0D;AAC1D;EACE,8BAA8B;AAChC;;AAEA,oCAAoC;AACpC;;EAEE,eAAe;EACf,cAAc;AAChB;;AAEA,yCAAyC;AACzC;;;;EAIE,aAAa;AACf;;AAEA,gGAAgG;AAChG;EACE;IACE,qBAAqB;EACvB;;EAEA;;;IAGE,qCAAqC;IACrC,uCAAuC;IACvC,sCAAsC;IACtC,gCAAgC;EAClC;AACF","sourcesContent":["/* https://piccalil.li/blog/a-modern-css-reset */\n\n/* Box sizing rules */\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  /* border: 1px solid red; */\n}\n\n/* font size */\n\nhtml {\n  font-size: 10px;\n}\n\n/* Remove default margin */\n* {\n  padding: 0;\n  margin: 0;\n}\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\nul,\nol {\n  list-style: none;\n}\n\n/* Set core root defaults */\nhtml:focus-within {\n  scroll-behavior: smooth;\n}\n\n/* Set core body defaults */\nbody {\n  min-height: 100vh;\n  text-rendering: optimizeSpeed;\n  line-height: 1.5;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n/* A elements that don't have a class get default styles */\na:not([class]) {\n  text-decoration-skip-ink: auto;\n}\n\n/* Make images easier to work with */\nimg,\npicture {\n  max-width: 100%;\n  display: block;\n}\n\n/* Inherit fonts for inputs and buttons */\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\n\n/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */\n@media (prefers-reduced-motion: reduce) {\n  html:focus-within {\n    scroll-behavior: auto;\n  }\n\n  *,\n  *::before,\n  *::after {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles/reset.css"],"names":[],"mappings":"AAAA,gDAAgD;;AAIhD,qBAAqB;AACrB;;;EAGE,sBAAsB;EACtB,2BAA2B;AAC7B;;AAEA,cAAc;;AAEd;EACE,eAAe;AACjB;;AAEA,kCAAkC;AAClC;EACE,UAAU;EACV,SAAS;AACX;AACA,2GAA2G;AAC3G;;EAEE,gBAAgB;AAClB;;AAEA,2BAA2B;AAC3B;EACE,uBAAuB;AACzB;;AAEA,2BAA2B;AAC3B;EACE,iBAAiB;EACjB,6BAA6B;EAC7B,gBAAgB;EAChB,gCAAgC;EAChC,kBAAkB;AACpB;;AAEA,0DAA0D;AAC1D;EACE,8BAA8B;AAChC;;AAEA,oCAAoC;AACpC;;EAEE,eAAe;EACf,cAAc;AAChB;;AAEA,yCAAyC;AACzC;;;;EAIE,aAAa;AACf;;AAEA,gGAAgG;AAChG;EACE;IACE,qBAAqB;EACvB;;EAEA;;;IAGE,qCAAqC;IACrC,uCAAuC;IACvC,sCAAsC;IACtC,gCAAgC;EAClC;AACF","sourcesContent":["/* https://piccalil.li/blog/a-modern-css-reset */\n\n@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');\n\n/* Box sizing rules */\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  /* border: 1px solid red; */\n}\n\n/* font size */\n\nhtml {\n  font-size: 10px;\n}\n\n/* Remove default margin padding */\n* {\n  padding: 0;\n  margin: 0;\n}\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\nul,\nol {\n  list-style: none;\n}\n\n/* Set core root defaults */\nhtml:focus-within {\n  scroll-behavior: smooth;\n}\n\n/* Set core body defaults */\nbody {\n  min-height: 100vh;\n  text-rendering: optimizeSpeed;\n  line-height: 1.5;\n  font-family: 'Inter', sans-serif;\n  position: relative;\n}\n\n/* A elements that don't have a class get default styles */\na:not([class]) {\n  text-decoration-skip-ink: auto;\n}\n\n/* Make images easier to work with */\nimg,\npicture {\n  max-width: 100%;\n  display: block;\n}\n\n/* Inherit fonts for inputs and buttons */\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\n\n/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */\n@media (prefers-reduced-motion: reduce) {\n  html:focus-within {\n    scroll-behavior: auto;\n  }\n\n  *,\n  *::before,\n  *::after {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -124,7 +124,141 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.logo {
+  width: 10rem;
+  height: 10rem;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+svg {
+  width: 20px;
+  height: 15px;
+}
+
+footer {
+  border-top: 0.3rem solid #000;
+  height: 5rem;
+  font-size: 1.4rem;
+}
+
+.footer-text {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav_link img {
+  width: 70px;
+  height: 50px;
+  border-radius: 45%;
+  margin: 10px;
+}
+
+#imgg img {
+  width: 110px;
+  height: 95px;
+}
+
+.interactive-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_link ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-left: 700px;
+}
+
+.section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.body_sec {
+  display: flex;
+}
+
+.body_sec2 {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+}
+
+/* comment popup */
+
+.comment-popup {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+.comment-popup-img {
+  margin: 3.2rem auto;
+  clear: both;
+  width: 30rem;
+  height: 24rem;
+}
+
+.comment-popup-title {
+  text-align: center;
+}
+
+.comment-popup-exit-btn {
+  width: 4.2rem;
+  height: 4.2rem;
+  float: right;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.comment-popup-meal-details-list {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 764px) {
+  .comment-popup-img {
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .comment-popup-exit-btn {
+    margin-top: 4rem;
+    margin-right: 5rem;
+  }
+}
+`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,SAAS;EACT,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,cAAc;AAChB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,uBAAuB;AACzB;;AAEA,kBAAkB;;AAElB;EACE,MAAM;EACN,SAAS;EACT,OAAO;EACP,QAAQ;EACR,YAAY;EACZ,sBAAsB;EACtB,cAAc;EACd,WAAW;EACX,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE;IACE,YAAY;IACZ,aAAa;EACf;;EAEA;IACE,gBAAgB;IAChB,kBAAkB;EACpB;AACF","sourcesContent":[".logo {\n  width: 10rem;\n  height: 10rem;\n}\n\nheader {\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  font-size: 1.4rem;\n  gap: 5rem;\n}\n\n.nav-links {\n  display: flex;\n  flex-direction: row;\n  gap: 2.4rem;\n}\n\n.nav-link {\n  color: #000;\n  text-decoration: none;\n  font-weight: 500;\n}\n\nsvg {\n  width: 20px;\n  height: 15px;\n}\n\nfooter {\n  border-top: 0.3rem solid #000;\n  height: 5rem;\n  font-size: 1.4rem;\n}\n\n.footer-text {\n  width: 80%;\n  margin: 0 auto;\n  padding-top: 1rem;\n  color: #000;\n  font-weight: 500;\n}\n\n.nav_link img {\n  width: 70px;\n  height: 50px;\n  border-radius: 45%;\n  margin: 10px;\n}\n\n#imgg img {\n  width: 110px;\n  height: 95px;\n}\n\n.interactive-btns {\n  display: flex;\n  flex-direction: column;\n}\n\n.nav_link ul {\n  display: flex;\n  list-style: none;\n  gap: 20px;\n  margin-left: 700px;\n}\n\n.section {\n  width: 80%;\n  margin: 0 auto;\n}\n\n.body_sec {\n  display: flex;\n}\n\n.body_sec2 {\n  display: flex;\n  margin-top: 70px;\n  justify-content: center;\n}\n\n/* comment popup */\n\n.comment-popup {\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: block;\n  width: 100%;\n  position: absolute;\n}\n\n.comment-popup-img {\n  margin: 3.2rem auto;\n  clear: both;\n  width: 30rem;\n  height: 24rem;\n}\n\n.comment-popup-title {\n  text-align: center;\n}\n\n.comment-popup-exit-btn {\n  width: 4.2rem;\n  height: 4.2rem;\n  float: right;\n  margin-top: 2rem;\n  margin-right: 2rem;\n}\n\n.comment-popup-meal-details-list {\n  font-size: 1.5rem;\n  font-weight: 400;\n  text-align: center;\n}\n\n@media (min-width: 764px) {\n  .comment-popup-img {\n    width: 40rem;\n    height: 30rem;\n  }\n\n  .comment-popup-exit-btn {\n    margin-top: 4rem;\n    margin-right: 5rem;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -623,6 +757,153 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/modules/comment_popup.js":
+/*!**************************************!*\
+  !*** ./src/modules/comment_popup.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mealDB__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mealDB */ "./src/modules/mealDB.js");
+/* harmony import */ var _assets_exit_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/exit.svg */ "./src/assets/exit.svg");
+
+
+
+const createMealDetailsListEl = (meal) => {
+  const mealDetailsList = document.createElement('ul');
+  const mealCategoryEl = document.createElement('li');
+  const mealRegionEl = document.createElement('li');
+  const mealTag = document.createElement('li');
+
+  mealDetailsList.classList.add('comment-popup-meal-details-list');
+
+  mealCategoryEl.innerText = `Meal Category : ` + meal.strCategory;
+  mealRegionEl.innerText = `Meal Region : ` + meal.strArea;
+  mealTag.innerText = `Meal Tags : ` + meal.strTags;
+
+  mealDetailsList.appendChild(mealCategoryEl);
+  mealDetailsList.appendChild(mealRegionEl);
+  mealDetailsList.appendChild(mealTag);
+
+  return mealDetailsList;
+};
+
+const renderCommentPopUp = (meal) => {
+  const popUpEl = document.createElement('div');
+  const mealImage = document.createElement('img');
+  const mealTitle = document.createElement('h1');
+  const exitBtnEl = document.createElement('img');
+
+  mealImage.src = new URL(meal.strMealThumb);
+  exitBtnEl.src = _assets_exit_svg__WEBPACK_IMPORTED_MODULE_1__;
+
+  exitBtnEl.addEventListener('click', (e) => {
+    e.target.parentNode.remove();
+  });
+
+  mealTitle.innerText = meal.strMeal;
+
+  popUpEl.setAttribute('data-mealID', meal.idMeal);
+  mealImage.setAttribute('data-mealID', meal.idMeal);
+  mealTitle.setAttribute('data-mealID', meal.idMeal);
+
+  popUpEl.classList.add('comment-popup');
+  mealImage.classList.add('comment-popup-img');
+  mealTitle.classList.add('comment-popup-title');
+  exitBtnEl.classList.add('comment-popup-exit-btn');
+
+  popUpEl.appendChild(exitBtnEl);
+  popUpEl.appendChild(mealImage);
+  popUpEl.appendChild(mealTitle);
+  popUpEl.appendChild(createMealDetailsListEl(meal));
+
+  document.body.appendChild(popUpEl);
+};
+
+const commentPopUp = (id) => {
+  const mealContainer = document.querySelector('.section');
+  mealContainer.addEventListener('click', async (e) => {
+    if (e.target.classList.contains('comment-btn')) {
+      const mealDb = new _mealDB__WEBPACK_IMPORTED_MODULE_0__["default"]();
+      const meal = await mealDb.lookUpMeal(id);
+      console.log(meal);
+      renderCommentPopUp(meal);
+    }
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentPopUp);
+
+
+/***/ }),
+
+/***/ "./src/modules/mealDB.js":
+/*!*******************************!*\
+  !*** ./src/modules/mealDB.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+class MealDb {
+  #URL;
+  #LOOKUP;
+  constructor() {
+    this.#URL = `https://www.themealdb.com/api/json/v1/1/`;
+    this.#LOOKUP = `lookup.php?i=`;
+  }
+
+  async lookUpMeal(id) {
+    try {
+      const res = await fetch(`${this.#URL}${this.#LOOKUP}${id}`, {
+        method: 'GET',
+      });
+      const data = await res.json();
+      return this.extractData(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  extractData = (data) => {
+    for (const key in data) {
+      if (Object.hasOwnProperty.call(data, key)) {
+        return data[key][0];
+      }
+    }
+  };
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MealDb);
+
+
+/***/ }),
+
+/***/ "./src/assets/exit.svg":
+/*!*****************************!*\
+  !*** ./src/assets/exit.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "exit.svg";
+
+/***/ }),
+
+/***/ "./src/assets/meal_logo.jpg":
+/*!**********************************!*\
+  !*** ./src/assets/meal_logo.jpg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "meal_logo.jpg";
+
 /***/ })
 
 /******/ 	});
@@ -676,6 +957,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -690,6 +983,29 @@ module.exports = styleTagTransform;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -707,8 +1023,14 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/reset.css */ "./src/styles/reset.css");
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
+/* harmony import */ var _assets_meal_logo_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/meal_logo.jpg */ "./src/assets/meal_logo.jpg");
+/* harmony import */ var _modules_comment_popup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/comment_popup */ "./src/modules/comment_popup.js");
 
 
+
+
+
+(0,_modules_comment_popup__WEBPACK_IMPORTED_MODULE_3__["default"])('52772');
 
 })();
 

@@ -81,3 +81,59 @@ footer {
   margin-top: 70px;
   justify-content: center;
 }
+
+/* comment popup */
+
+.comment-popup {
+  top: 0;
+  bottom: 0;
+  left: 10rem;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  display: block;
+  width: 70%;
+  position: absolute;
+  border: 0.5rem solid #000;
+}
+
+.comment-popup-img {
+  margin: 3.2rem auto;
+  clear: both;
+  width: 30rem;
+  height: 24rem;
+}
+
+.comment-popup-title {
+  text-align: center;
+}
+
+.comment-popup-exit-btn {
+  width: 4.2rem;
+  height: 4.2rem;
+  float: right;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.comment-popup-meal-details-list {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 764px) {
+  .comment-popup {
+    left: 20rem;
+  }
+
+  .comment-popup-img {
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .comment-popup-exit-btn {
+    margin-top: 4rem;
+    margin-right: 5rem;
+  }
+}

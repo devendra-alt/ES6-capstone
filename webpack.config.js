@@ -36,7 +36,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Leaderboard app',
+      title: 'MealDb Web App',
       filename: 'index.html',
       template: 'src/index.html',
     }),
