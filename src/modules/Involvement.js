@@ -13,10 +13,10 @@ class Involvement {
   async getComments(mealId) {
     try {
       const res = await fetch(`${this.#BASE_URL}comments?item_id=${mealId}`);
-      const data = await res.json();
       if (!res.ok) {
         throw new Error('errror in retriving comments!');
       }
+      const data = await res.json();
       return data;
     } catch (error) {
       return [];
