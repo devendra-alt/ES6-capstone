@@ -1,5 +1,6 @@
-import fetchMealsFromApi from './meal_list';
+import fetchMealsFromApi from './meal_list.js';
 import likeImg from '../assets/heart.svg';
+
 async function displayMeals() {
   const meals = await fetchMealsFromApi();
   const mainSection = document.querySelector('.section');

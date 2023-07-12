@@ -9,7 +9,6 @@ async function fetchMealsFromApi() {
     const result = await response.json();
     return result.meals; // Return the array of meals
   } catch (error) {
-    console.error('Error fetching meals:', error);
     return []; // Return an empty array if there's an error
   }
 }
