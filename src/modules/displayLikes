@@ -1,0 +1,30 @@
+const baseApiURL = 'https://www.themealdb.com/api/json/v1/1/search.php?f=p';
+const involvementApiURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB'; // Replace with your Involvement API URL
+
+const fetchMealsFromApi = async () => {
+  const response = await fetch(baseApiURL);
+  if (!response.ok) {
+    throw new Error(`HTTP Response Status: ${response.status}`);
+  }
+  const result = await response.json();
+
+  const meals = result.meals;
+  const mealLikesPromises = meals.map(async (meal) => {
+    const response = await fetch(`${involvementApiURL}?mealId=${meal.idMeal}`);
+    if (!response.ok) {
+      throw new Error(`HTTP Response Status: ${response.status}`);
+    }
+    const result = await response.json();
+    return result.likes;
+  });
+
+  const mealLikes = await Promise.all(mealLikesPromises);
+
+  meals.forEach((meal, index) => {
+    meal.likes = mealLikes[index];
+  });
+
+  return meals;
+};
+
+export default fetchMealsFromApi;
