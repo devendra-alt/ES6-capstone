@@ -38,6 +38,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Inter', sans-serif;
+  position: relative;
 }
 
 /* A elements that don't have a class get default styles */
