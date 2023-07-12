@@ -213,13 +213,15 @@ footer {
 .comment-popup {
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 10rem;
   right: 0;
   z-index: 100;
   background-color: #fff;
   display: block;
-  width: 100%;
+  width: 70%;
   position: absolute;
+  border: 0.5rem solid #000;
+  text-align: center;
 }
 
 .comment-popup-img {
@@ -248,6 +250,10 @@ footer {
 }
 
 @media (min-width: 764px) {
+  .comment-popup {
+    left: 20rem;
+  }
+
   .comment-popup-img {
     width: 40rem;
     height: 30rem;
@@ -258,7 +264,7 @@ footer {
     margin-right: 5rem;
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,SAAS;EACT,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,cAAc;AAChB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,uBAAuB;AACzB;;AAEA,kBAAkB;;AAElB;EACE,MAAM;EACN,SAAS;EACT,OAAO;EACP,QAAQ;EACR,YAAY;EACZ,sBAAsB;EACtB,cAAc;EACd,WAAW;EACX,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE;IACE,YAAY;IACZ,aAAa;EACf;;EAEA;IACE,gBAAgB;IAChB,kBAAkB;EACpB;AACF","sourcesContent":[".logo {\n  width: 10rem;\n  height: 10rem;\n}\n\nheader {\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  font-size: 1.4rem;\n  gap: 5rem;\n}\n\n.nav-links {\n  display: flex;\n  flex-direction: row;\n  gap: 2.4rem;\n}\n\n.nav-link {\n  color: #000;\n  text-decoration: none;\n  font-weight: 500;\n}\n\nsvg {\n  width: 20px;\n  height: 15px;\n}\n\nfooter {\n  border-top: 0.3rem solid #000;\n  height: 5rem;\n  font-size: 1.4rem;\n}\n\n.footer-text {\n  width: 80%;\n  margin: 0 auto;\n  padding-top: 1rem;\n  color: #000;\n  font-weight: 500;\n}\n\n.nav_link img {\n  width: 70px;\n  height: 50px;\n  border-radius: 45%;\n  margin: 10px;\n}\n\n#imgg img {\n  width: 110px;\n  height: 95px;\n}\n\n.interactive-btns {\n  display: flex;\n  flex-direction: column;\n}\n\n.nav_link ul {\n  display: flex;\n  list-style: none;\n  gap: 20px;\n  margin-left: 700px;\n}\n\n.section {\n  width: 80%;\n  margin: 0 auto;\n}\n\n.body_sec {\n  display: flex;\n}\n\n.body_sec2 {\n  display: flex;\n  margin-top: 70px;\n  justify-content: center;\n}\n\n/* comment popup */\n\n.comment-popup {\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: block;\n  width: 100%;\n  position: absolute;\n}\n\n.comment-popup-img {\n  margin: 3.2rem auto;\n  clear: both;\n  width: 30rem;\n  height: 24rem;\n}\n\n.comment-popup-title {\n  text-align: center;\n}\n\n.comment-popup-exit-btn {\n  width: 4.2rem;\n  height: 4.2rem;\n  float: right;\n  margin-top: 2rem;\n  margin-right: 2rem;\n}\n\n.comment-popup-meal-details-list {\n  font-size: 1.5rem;\n  font-weight: 400;\n  text-align: center;\n}\n\n@media (min-width: 764px) {\n  .comment-popup-img {\n    width: 40rem;\n    height: 30rem;\n  }\n\n  .comment-popup-exit-btn {\n    margin-top: 4rem;\n    margin-right: 5rem;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,SAAS;EACT,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,cAAc;AAChB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,uBAAuB;AACzB;;AAEA,kBAAkB;;AAElB;EACE,MAAM;EACN,SAAS;EACT,WAAW;EACX,QAAQ;EACR,YAAY;EACZ,sBAAsB;EACtB,cAAc;EACd,UAAU;EACV,kBAAkB;EAClB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE;IACE,WAAW;EACb;;EAEA;IACE,YAAY;IACZ,aAAa;EACf;;EAEA;IACE,gBAAgB;IAChB,kBAAkB;EACpB;AACF","sourcesContent":[".logo {\n  width: 10rem;\n  height: 10rem;\n}\n\nheader {\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  font-size: 1.4rem;\n  gap: 5rem;\n}\n\n.nav-links {\n  display: flex;\n  flex-direction: row;\n  gap: 2.4rem;\n}\n\n.nav-link {\n  color: #000;\n  text-decoration: none;\n  font-weight: 500;\n}\n\nsvg {\n  width: 20px;\n  height: 15px;\n}\n\nfooter {\n  border-top: 0.3rem solid #000;\n  height: 5rem;\n  font-size: 1.4rem;\n}\n\n.footer-text {\n  width: 80%;\n  margin: 0 auto;\n  padding-top: 1rem;\n  color: #000;\n  font-weight: 500;\n}\n\n.nav_link img {\n  width: 70px;\n  height: 50px;\n  border-radius: 45%;\n  margin: 10px;\n}\n\n#imgg img {\n  width: 110px;\n  height: 95px;\n}\n\n.interactive-btns {\n  display: flex;\n  flex-direction: column;\n}\n\n.nav_link ul {\n  display: flex;\n  list-style: none;\n  gap: 20px;\n  margin-left: 700px;\n}\n\n.section {\n  width: 80%;\n  margin: 0 auto;\n}\n\n.body_sec {\n  display: flex;\n}\n\n.body_sec2 {\n  display: flex;\n  margin-top: 70px;\n  justify-content: center;\n}\n\n/* comment popup */\n\n.comment-popup {\n  top: 0;\n  bottom: 0;\n  left: 10rem;\n  right: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: block;\n  width: 70%;\n  position: absolute;\n  border: 0.5rem solid #000;\n  text-align: center;\n}\n\n.comment-popup-img {\n  margin: 3.2rem auto;\n  clear: both;\n  width: 30rem;\n  height: 24rem;\n}\n\n.comment-popup-title {\n  text-align: center;\n}\n\n.comment-popup-exit-btn {\n  width: 4.2rem;\n  height: 4.2rem;\n  float: right;\n  margin-top: 2rem;\n  margin-right: 2rem;\n}\n\n.comment-popup-meal-details-list {\n  font-size: 1.5rem;\n  font-weight: 400;\n  text-align: center;\n}\n\n@media (min-width: 764px) {\n  .comment-popup {\n    left: 20rem;\n  }\n\n  .comment-popup-img {\n    width: 40rem;\n    height: 30rem;\n  }\n\n  .comment-popup-exit-btn {\n    margin-top: 4rem;\n    margin-right: 5rem;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -759,20 +765,77 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/modules/comment_popup.js":
-/*!**************************************!*\
-  !*** ./src/modules/comment_popup.js ***!
-  \**************************************/
+/***/ "./src/modules/comments/initComments.js":
+/*!**********************************************!*\
+  !*** ./src/modules/comments/initComments.js ***!
+  \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _mealDB__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mealDB */ "./src/modules/mealDB.js");
-/* harmony import */ var _assets_exit_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/exit.svg */ "./src/assets/exit.svg");
+/* harmony import */ var _mealDB_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mealDB.js */ "./src/modules/mealDB.js");
+/* harmony import */ var _render_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./render.js */ "./src/modules/comments/render.js");
 
 
+
+const initCommentPopUp = (id) => {
+  const mealContainer = document.querySelector('.section');
+  mealContainer.addEventListener('click', async (e) => {
+    if (e.target.classList.contains('comment-btn')) {
+      const mealDb = new _mealDB_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
+      const meal = await mealDb.lookUpMeal(id);
+      (0,_render_js__WEBPACK_IMPORTED_MODULE_1__["default"])(meal);
+    }
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initCommentPopUp);
+
+
+/***/ }),
+
+/***/ "./src/modules/comments/render.js":
+/*!****************************************!*\
+  !*** ./src/modules/comments/render.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _assets_exit_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/exit.svg */ "./src/assets/exit.svg");
+/* harmony import */ var _involment_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../involment.js */ "./src/modules/involment.js");
+
+
+
+const createCommentsEl = async (meal) => {
+  const commentSectionEl = document.createElement('div');
+  const commentSectionTitle = document.createElement('h1');
+  const commentDetailsList = document.createElement('ul');
+
+  commentSectionEl.setAttribute('data-comment-section-id', meal.idMeal);
+  commentSectionTitle.setAttribute('data-comment-section-id', meal.idMeal);
+  commentDetailsList.setAttribute('data-comment-section-id', meal.idMeal);
+
+  const envolment = new _involment_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+  const commentsData = await envolment.getComments(meal.idMeal);
+
+  commentSectionTitle.innerText = `Comments(${commentsData.length})`;
+
+  commentsData.forEach((element) => {
+    const listItem = document.createElement('p');
+    listItem.innerText = `${element.creation_date} ${element.username} : ${element.comment}`;
+    commentDetailsList.appendChild(listItem);
+  });
+
+  commentSectionEl.appendChild(commentSectionTitle);
+  commentSectionEl.appendChild(commentDetailsList);
+
+  return commentSectionEl;
+};
 
 const createMealDetailsListEl = (meal) => {
   const mealDetailsList = document.createElement('ul');
@@ -782,9 +845,9 @@ const createMealDetailsListEl = (meal) => {
 
   mealDetailsList.classList.add('comment-popup-meal-details-list');
 
-  mealCategoryEl.innerText = `Meal Category : ` + meal.strCategory;
-  mealRegionEl.innerText = `Meal Region : ` + meal.strArea;
-  mealTag.innerText = `Meal Tags : ` + meal.strTags;
+  mealCategoryEl.innerText = `Meal Category : ${meal.strCategory}`;
+  mealRegionEl.innerText = `Meal Region : ${meal.strArea}`;
+  mealTag.innerText = `Meal Tags : ${meal.strTags}`;
 
   mealDetailsList.appendChild(mealCategoryEl);
   mealDetailsList.appendChild(mealRegionEl);
@@ -792,17 +855,16 @@ const createMealDetailsListEl = (meal) => {
 
   return mealDetailsList;
 };
-
-const renderCommentPopUp = (meal) => {
+const renderCommentPopUp = async (meal) => {
   const popUpEl = document.createElement('div');
   const mealImage = document.createElement('img');
   const mealTitle = document.createElement('h1');
   const exitBtnEl = document.createElement('img');
 
   mealImage.src = new URL(meal.strMealThumb);
-  exitBtnEl.src = _assets_exit_svg__WEBPACK_IMPORTED_MODULE_1__;
+  exitBtnEl.src = _assets_exit_svg__WEBPACK_IMPORTED_MODULE_0__;
 
-  exitBtnEl.addEventListener('click', (e) => {
+  exitBtnEl.addEventListener('click', async (e) => {
     e.target.parentNode.remove();
   });
 
@@ -821,23 +883,53 @@ const renderCommentPopUp = (meal) => {
   popUpEl.appendChild(mealImage);
   popUpEl.appendChild(mealTitle);
   popUpEl.appendChild(createMealDetailsListEl(meal));
+  popUpEl.appendChild(await createCommentsEl(meal));
 
   document.body.appendChild(popUpEl);
 };
 
-const commentPopUp = (id) => {
-  const mealContainer = document.querySelector('.section');
-  mealContainer.addEventListener('click', async (e) => {
-    if (e.target.classList.contains('comment-btn')) {
-      const mealDb = new _mealDB__WEBPACK_IMPORTED_MODULE_0__["default"]();
-      const meal = await mealDb.lookUpMeal(id);
-      console.log(meal);
-      renderCommentPopUp(meal);
-    }
-  });
-};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderCommentPopUp);
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentPopUp);
+
+/***/ }),
+
+/***/ "./src/modules/involment.js":
+/*!**********************************!*\
+  !*** ./src/modules/involment.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+class Envolment {
+  #APP_ID;
+
+  #BASE_URL;
+
+  constructor() {
+    this.#APP_ID = 'EI6t8oJ571YKMWTnlNDB';
+    this.#BASE_URL = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${
+      this.#APP_ID
+    }/`;
+  }
+
+  async getComments(mealId) {
+    try {
+      const res = await fetch(`${this.#BASE_URL}comments?item_id=${mealId}`);
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error('errror in retriving comments!');
+      }
+      return data;
+    } catch (error) {
+      throw new Error('errror in retriving comments!');
+    }
+  }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Envolment);
 
 
 /***/ }),
@@ -854,10 +946,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class MealDb {
   #URL;
+
   #LOOKUP;
+
   constructor() {
-    this.#URL = `https://www.themealdb.com/api/json/v1/1/`;
-    this.#LOOKUP = `lookup.php?i=`;
+    this.#URL = 'https://www.themealdb.com/api/json/v1/1/';
+    this.#LOOKUP = 'lookup.php?i=';
   }
 
   async lookUpMeal(id) {
@@ -866,19 +960,11 @@ class MealDb {
         method: 'GET',
       });
       const data = await res.json();
-      return this.extractData(data);
+      return data.meals[0];
     } catch (error) {
-      console.log(error);
+      throw new Error(error);
     }
   }
-
-  extractData = (data) => {
-    for (const key in data) {
-      if (Object.hasOwnProperty.call(data, key)) {
-        return data[key][0];
-      }
-    }
-  };
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MealDb);
@@ -1024,13 +1110,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/reset.css */ "./src/styles/reset.css");
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
 /* harmony import */ var _assets_meal_logo_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/meal_logo.jpg */ "./src/assets/meal_logo.jpg");
-/* harmony import */ var _modules_comment_popup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/comment_popup */ "./src/modules/comment_popup.js");
+/* harmony import */ var _modules_comments_initComments_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/comments/initComments.js */ "./src/modules/comments/initComments.js");
 
 
 
 
 
-(0,_modules_comment_popup__WEBPACK_IMPORTED_MODULE_3__["default"])('52772');
+(0,_modules_comments_initComments_js__WEBPACK_IMPORTED_MODULE_3__["default"])('52772');
 
 })();
 
