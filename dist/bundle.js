@@ -98,7 +98,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/reset.css"],"names":[],"mappings":"AAAA,gDAAgD;;AAIhD,qBAAqB;AACrB;;;EAGE,sBAAsB;EACtB,2BAA2B;AAC7B;;AAEA,cAAc;;AAEd;EACE,eAAe;AACjB;;AAEA,kCAAkC;AAClC;EACE,UAAU;EACV,SAAS;AACX;AACA,2GAA2G;AAC3G;;EAEE,gBAAgB;AAClB;;AAEA,2BAA2B;AAC3B;EACE,uBAAuB;AACzB;;AAEA,2BAA2B;AAC3B;EACE,iBAAiB;EACjB,6BAA6B;EAC7B,gBAAgB;EAChB,gCAAgC;EAChC,kBAAkB;AACpB;;AAEA,0DAA0D;AAC1D;EACE,8BAA8B;AAChC;;AAEA,oCAAoC;AACpC;;EAEE,eAAe;EACf,cAAc;AAChB;;AAEA,yCAAyC;AACzC;;;;EAIE,aAAa;AACf;;AAEA,gGAAgG;AAChG;EACE;IACE,qBAAqB;EACvB;;EAEA;;;IAGE,qCAAqC;IACrC,uCAAuC;IACvC,sCAAsC;IACtC,gCAAgC;EAClC;AACF","sourcesContent":["/* https://piccalil.li/blog/a-modern-css-reset */\n\n@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');\n\n/* Box sizing rules */\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  /* border: 1px solid red; */\n}\n\n/* font size */\n\nhtml {\n  font-size: 10px;\n}\n\n/* Remove default margin padding */\n* {\n  padding: 0;\n  margin: 0;\n}\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\nul,\nol {\n  list-style: none;\n}\n\n/* Set core root defaults */\nhtml:focus-within {\n  scroll-behavior: smooth;\n}\n\n/* Set core body defaults */\nbody {\n  min-height: 100vh;\n  text-rendering: optimizeSpeed;\n  line-height: 1.5;\n  font-family: 'Inter', sans-serif;\n  position: relative;\n}\n\n/* A elements that don't have a class get default styles */\na:not([class]) {\n  text-decoration-skip-ink: auto;\n}\n\n/* Make images easier to work with */\nimg,\npicture {\n  max-width: 100%;\n  display: block;\n}\n\n/* Inherit fonts for inputs and buttons */\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\n\n/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */\n@media (prefers-reduced-motion: reduce) {\n  html:focus-within {\n    scroll-behavior: auto;\n  }\n\n  *,\n  *::before,\n  *::after {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles/reset.css"],"names":[],"mappings":"AAAA,gDAAgD;;AAIhD,qBAAqB;AACrB;;;EAGE,sBAAsB;EACtB,2BAA2B;AAC7B;;AAEA,cAAc;;AAEd;EACE,eAAe;AACjB;;AAEA,kCAAkC;AAClC;EACE,UAAU;EACV,SAAS;AACX;AACA,2GAA2G;AAC3G;;EAEE,gBAAgB;AAClB;;AAEA,2BAA2B;AAC3B;EACE,uBAAuB;AACzB;;AAEA,2BAA2B;AAC3B;EACE,iBAAiB;EACjB,6BAA6B;EAC7B,gBAAgB;EAChB,gCAAgC;EAChC,kBAAkB;AACpB;;AAEA,0DAA0D;AAC1D;EACE,8BAA8B;AAChC;;AAEA,oCAAoC;AACpC;;EAEE,eAAe;EACf,cAAc;AAChB;;AAEA,yCAAyC;AACzC;;;;EAIE,aAAa;AACf;;AAEA,gGAAgG;AAChG;EACE;IACE,qBAAqB;EACvB;;EAEA;;;IAGE,qCAAqC;IACrC,uCAAuC;IACvC,sCAAsC;IACtC,gCAAgC;EAClC;AACF","sourcesContent":["/* https://piccalil.li/blog/a-modern-css-reset */\r\n\r\n@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');\r\n\r\n/* Box sizing rules */\r\n*,\r\n*::before,\r\n*::after {\r\n  box-sizing: border-box;\r\n  /* border: 1px solid red; */\r\n}\r\n\r\n/* font size */\r\n\r\nhtml {\r\n  font-size: 10px;\r\n}\r\n\r\n/* Remove default margin padding */\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\r\nul,\r\nol {\r\n  list-style: none;\r\n}\r\n\r\n/* Set core root defaults */\r\nhtml:focus-within {\r\n  scroll-behavior: smooth;\r\n}\r\n\r\n/* Set core body defaults */\r\nbody {\r\n  min-height: 100vh;\r\n  text-rendering: optimizeSpeed;\r\n  line-height: 1.5;\r\n  font-family: 'Inter', sans-serif;\r\n  position: relative;\r\n}\r\n\r\n/* A elements that don't have a class get default styles */\r\na:not([class]) {\r\n  text-decoration-skip-ink: auto;\r\n}\r\n\r\n/* Make images easier to work with */\r\nimg,\r\npicture {\r\n  max-width: 100%;\r\n  display: block;\r\n}\r\n\r\n/* Inherit fonts for inputs and buttons */\r\ninput,\r\nbutton,\r\ntextarea,\r\nselect {\r\n  font: inherit;\r\n}\r\n\r\n/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */\r\n@media (prefers-reduced-motion: reduce) {\r\n  html:focus-within {\r\n    scroll-behavior: auto;\r\n  }\r\n\r\n  *,\r\n  *::before,\r\n  *::after {\r\n    animation-duration: 0.01ms !important;\r\n    animation-iteration-count: 1 !important;\r\n    transition-duration: 0.01ms !important;\r\n    scroll-behavior: auto !important;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -196,6 +196,10 @@ footer {
 .section {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  padding-bottom: 18rem;
 }
 
 .body_sec {
@@ -208,75 +212,124 @@ footer {
   justify-content: center;
 }
 
-/* comment popup */
-
-.comment-popup {
-  top: 0;
-  bottom: 0;
-  left: 2rem;
-  right: 0;
-  z-index: 100;
-  background-color: #fff;
-  display: block;
-  width: 90%;
-  position: absolute;
-  border: 0.5rem solid #000;
-  text-align: center;
+.meal-item {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  gap: 1.2rem;
 }
 
-.comment-popup-img {
-  margin: 3.2rem auto;
-  clear: both;
-  width: 30rem;
-  height: 24rem;
+.meal-item-img {
+  width: 100%;
 }
 
-.comment-popup-title {
-  text-align: center;
+.meal-item-title {
+  font-size: 1.4rem;
 }
 
-.comment-popup-exit-btn {
-  width: 4.2rem;
-  height: 4.2rem;
-  float: right;
-  margin-top: 2rem;
-  margin-right: 2rem;
-}
+.meal-item-like-btn {
+  width: 2.4rem;
 
-.comment-popup-meal-details-list {
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: center;
-}
+  /* comment popup */
 
-.popup-comment-section {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.popup-comments-item {
-  font-size: 1.3rem;
-  font-weight: 500;
-}
-
-@media (min-width: 764px) {
   .comment-popup {
-    left: 20rem;
-    width: 70%;
+    top: 0;
+    bottom: 0;
+    left: 2rem;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    display: block;
+    width: 90%;
     height: min-content;
+    position: absolute;
+    border: 0.5rem solid #000;
+    text-align: center;
   }
 
   .comment-popup-img {
-    width: 40rem;
-    height: 30rem;
+    margin: 3.2rem auto;
+    clear: both;
+    width: 30rem;
+    height: 24rem;
+  }
+
+  .comment-popup-title {
+    text-align: center;
   }
 
   .comment-popup-exit-btn {
-    margin-top: 4rem;
-    margin-right: 5rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    float: right;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+
+  .comment-popup-meal-details-list {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .popup-comment-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .popup-comments-item {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  /* comment popup form */
+
+  .popup-comment-submit-form {
+    width: 60%;
+    padding: 2.5rem;
+    margin: 0 auto;
+  }
+
+  .comment-input {
+    margin-top: 3rem;
+    display: block;
+    margin-bottom: 2rem;
+    border: 0.3rem solid #000;
+    padding: 0.7rem;
+  }
+
+  .popup-comment-submit-form-insights {
+    height: 5em;
+  }
+
+  .popup-comment-submit-form-comment-btn {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    margin-left: 0;
+    border: 0.3rem solid #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #fff;
+  }
+
+  @media (min-width: 764px) {
+    .comment-popup {
+      left: 20rem;
+      width: 70%;
+    }
+
+    .comment-popup-img {
+      width: 40rem;
+      height: 30rem;
+    }
+
+    .comment-popup-exit-btn {
+      margin-top: 4rem;
+      margin-right: 5rem;
+    }
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,SAAS;EACT,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,cAAc;AAChB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,uBAAuB;AACzB;;AAEA,kBAAkB;;AAElB;EACE,MAAM;EACN,SAAS;EACT,UAAU;EACV,QAAQ;EACR,YAAY;EACZ,sBAAsB;EACtB,cAAc;EACd,UAAU;EACV,kBAAkB;EAClB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE;IACE,WAAW;IACX,UAAU;IACV,mBAAmB;EACrB;;EAEA;IACE,YAAY;IACZ,aAAa;EACf;;EAEA;IACE,gBAAgB;IAChB,kBAAkB;EACpB;AACF","sourcesContent":[".logo {\n  width: 10rem;\n  height: 10rem;\n}\n\nheader {\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  font-size: 1.4rem;\n  gap: 5rem;\n}\n\n.nav-links {\n  display: flex;\n  flex-direction: row;\n  gap: 2.4rem;\n}\n\n.nav-link {\n  color: #000;\n  text-decoration: none;\n  font-weight: 500;\n}\n\nsvg {\n  width: 20px;\n  height: 15px;\n}\n\nfooter {\n  border-top: 0.3rem solid #000;\n  height: 5rem;\n  font-size: 1.4rem;\n}\n\n.footer-text {\n  width: 80%;\n  margin: 0 auto;\n  padding-top: 1rem;\n  color: #000;\n  font-weight: 500;\n}\n\n.nav_link img {\n  width: 70px;\n  height: 50px;\n  border-radius: 45%;\n  margin: 10px;\n}\n\n#imgg img {\n  width: 110px;\n  height: 95px;\n}\n\n.interactive-btns {\n  display: flex;\n  flex-direction: column;\n}\n\n.nav_link ul {\n  display: flex;\n  list-style: none;\n  gap: 20px;\n  margin-left: 700px;\n}\n\n.section {\n  width: 80%;\n  margin: 0 auto;\n}\n\n.body_sec {\n  display: flex;\n}\n\n.body_sec2 {\n  display: flex;\n  margin-top: 70px;\n  justify-content: center;\n}\n\n/* comment popup */\n\n.comment-popup {\n  top: 0;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: block;\n  width: 90%;\n  position: absolute;\n  border: 0.5rem solid #000;\n  text-align: center;\n}\n\n.comment-popup-img {\n  margin: 3.2rem auto;\n  clear: both;\n  width: 30rem;\n  height: 24rem;\n}\n\n.comment-popup-title {\n  text-align: center;\n}\n\n.comment-popup-exit-btn {\n  width: 4.2rem;\n  height: 4.2rem;\n  float: right;\n  margin-top: 2rem;\n  margin-right: 2rem;\n}\n\n.comment-popup-meal-details-list {\n  font-size: 1.5rem;\n  font-weight: 400;\n  text-align: center;\n}\n\n.popup-comment-section {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\n\n.popup-comments-item {\n  font-size: 1.3rem;\n  font-weight: 500;\n}\n\n@media (min-width: 764px) {\n  .comment-popup {\n    left: 20rem;\n    width: 70%;\n    height: min-content;\n  }\n\n  .comment-popup-img {\n    width: 40rem;\n    height: 30rem;\n  }\n\n  .comment-popup-exit-btn {\n    margin-top: 4rem;\n    margin-right: 5rem;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,SAAS;EACT,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,eAAe;EACf,WAAW;EACX,qBAAqB;AACvB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;;EAEb,kBAAkB;;EAElB;IACE,MAAM;IACN,SAAS;IACT,UAAU;IACV,QAAQ;IACR,YAAY;IACZ,sBAAsB;IACtB,cAAc;IACd,UAAU;IACV,mBAAmB;IACnB,kBAAkB;IAClB,yBAAyB;IACzB,kBAAkB;EACpB;;EAEA;IACE,mBAAmB;IACnB,WAAW;IACX,YAAY;IACZ,aAAa;EACf;;EAEA;IACE,kBAAkB;EACpB;;EAEA;IACE,aAAa;IACb,cAAc;IACd,YAAY;IACZ,gBAAgB;IAChB,kBAAkB;EACpB;;EAEA;IACE,iBAAiB;IACjB,gBAAgB;IAChB,kBAAkB;EACpB;;EAEA;IACE,mBAAmB;IACnB,sBAAsB;EACxB;;EAEA;IACE,iBAAiB;IACjB,gBAAgB;EAClB;;EAEA,uBAAuB;;EAEvB;IACE,UAAU;IACV,eAAe;IACf,cAAc;EAChB;;EAEA;IACE,gBAAgB;IAChB,cAAc;IACd,mBAAmB;IACnB,yBAAyB;IACzB,eAAe;EACjB;;EAEA;IACE,WAAW;EACb;;EAEA;IACE,cAAc;IACd,sBAAsB;IACtB,cAAc;IACd,yBAAyB;IACzB,iBAAiB;IACjB,gBAAgB;IAChB,sBAAsB;EACxB;;EAEA;IACE;MACE,WAAW;MACX,UAAU;IACZ;;IAEA;MACE,YAAY;MACZ,aAAa;IACf;;IAEA;MACE,gBAAgB;MAChB,kBAAkB;IACpB;EACF;AACF","sourcesContent":[".logo {\r\n  width: 10rem;\r\n  height: 10rem;\r\n}\r\n\r\nheader {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  align-items: center;\r\n  font-size: 1.4rem;\r\n  gap: 5rem;\r\n}\r\n\r\n.nav-links {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 2.4rem;\r\n}\r\n\r\n.nav-link {\r\n  color: #000;\r\n  text-decoration: none;\r\n  font-weight: 500;\r\n}\r\n\r\nsvg {\r\n  width: 20px;\r\n  height: 15px;\r\n}\r\n\r\nfooter {\r\n  border-top: 0.3rem solid #000;\r\n  height: 5rem;\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.footer-text {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  padding-top: 1rem;\r\n  color: #000;\r\n  font-weight: 500;\r\n}\r\n\r\n.nav_link img {\r\n  width: 70px;\r\n  height: 50px;\r\n  border-radius: 45%;\r\n  margin: 10px;\r\n}\r\n\r\n#imgg img {\r\n  width: 110px;\r\n  height: 95px;\r\n}\r\n\r\n.interactive-btns {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.nav_link ul {\r\n  display: flex;\r\n  list-style: none;\r\n  gap: 20px;\r\n  margin-left: 700px;\r\n}\r\n\r\n.section {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  gap: 2.4rem;\r\n  padding-bottom: 18rem;\r\n}\r\n\r\n.body_sec {\r\n  display: flex;\r\n}\r\n\r\n.body_sec2 {\r\n  display: flex;\r\n  margin-top: 70px;\r\n  justify-content: center;\r\n}\r\n\r\n.meal-item {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 18rem;\r\n  gap: 1.2rem;\r\n}\r\n\r\n.meal-item-img {\r\n  width: 100%;\r\n}\r\n\r\n.meal-item-title {\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.meal-item-like-btn {\r\n  width: 2.4rem;\r\n\r\n  /* comment popup */\r\n\r\n  .comment-popup {\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 2rem;\r\n    right: 0;\r\n    z-index: 100;\r\n    background-color: #fff;\r\n    display: block;\r\n    width: 90%;\r\n    height: min-content;\r\n    position: absolute;\r\n    border: 0.5rem solid #000;\r\n    text-align: center;\r\n  }\r\n\r\n  .comment-popup-img {\r\n    margin: 3.2rem auto;\r\n    clear: both;\r\n    width: 30rem;\r\n    height: 24rem;\r\n  }\r\n\r\n  .comment-popup-title {\r\n    text-align: center;\r\n  }\r\n\r\n  .comment-popup-exit-btn {\r\n    width: 4.2rem;\r\n    height: 4.2rem;\r\n    float: right;\r\n    margin-top: 2rem;\r\n    margin-right: 2rem;\r\n  }\r\n\r\n  .comment-popup-meal-details-list {\r\n    font-size: 1.5rem;\r\n    font-weight: 400;\r\n    text-align: center;\r\n  }\r\n\r\n  .popup-comment-section {\r\n    padding-top: 2.5rem;\r\n    padding-bottom: 2.5rem;\r\n  }\r\n\r\n  .popup-comments-item {\r\n    font-size: 1.3rem;\r\n    font-weight: 500;\r\n  }\r\n\r\n  /* comment popup form */\r\n\r\n  .popup-comment-submit-form {\r\n    width: 60%;\r\n    padding: 2.5rem;\r\n    margin: 0 auto;\r\n  }\r\n\r\n  .comment-input {\r\n    margin-top: 3rem;\r\n    display: block;\r\n    margin-bottom: 2rem;\r\n    border: 0.3rem solid #000;\r\n    padding: 0.7rem;\r\n  }\r\n\r\n  .popup-comment-submit-form-insights {\r\n    height: 5em;\r\n  }\r\n\r\n  .popup-comment-submit-form-comment-btn {\r\n    display: block;\r\n    padding: 0.8rem 1.2rem;\r\n    margin-left: 0;\r\n    border: 0.3rem solid #000;\r\n    font-size: 1.2rem;\r\n    font-weight: 500;\r\n    background-color: #fff;\r\n  }\r\n\r\n  @media (min-width: 764px) {\r\n    .comment-popup {\r\n      left: 20rem;\r\n      width: 70%;\r\n    }\r\n\r\n    .comment-popup-img {\r\n      width: 40rem;\r\n      height: 30rem;\r\n    }\r\n\r\n    .comment-popup-exit-btn {\r\n      margin-top: 4rem;\r\n      margin-right: 5rem;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -777,65 +830,97 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/modules/comments/initComments.js":
-/*!**********************************************!*\
-  !*** ./src/modules/comments/initComments.js ***!
-  \**********************************************/
+/***/ "./src/modules/Involvement.js":
+/*!************************************!*\
+  !*** ./src/modules/Involvement.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _mealDB_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mealDB.js */ "./src/modules/mealDB.js");
-/* harmony import */ var _render_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./render.js */ "./src/modules/comments/render.js");
+class Involvement {
+  #APP_ID;
 
+  #BASE_URL;
 
+  constructor() {
+    this.#APP_ID = 'EI6t8oJ571YKMWTnlNDB';
+    this.#BASE_URL = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${
+      this.#APP_ID
+    }/`;
+  }
 
-const initCommentPopUp = (id) => {
-  const mealContainer = document.querySelector('.section');
-  mealContainer.addEventListener('click', async (e) => {
-    if (e.target.classList.contains('comment-btn')) {
-      const mealDb = new _mealDB_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
-      const meal = await mealDb.lookUpMeal(id);
-      (0,_render_js__WEBPACK_IMPORTED_MODULE_1__["default"])(meal);
+  async getComments(mealId) {
+    try {
+      const res = await fetch(`${this.#BASE_URL}comments?item_id=${mealId}`);
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error('errror in retriving comments!');
+      }
+      return data;
+    } catch (error) {
+      return [];
     }
-  });
-};
+  }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initCommentPopUp);
+  async setComment(mealId, userName, comment) {
+    try {
+      const res = await fetch(`${this.#BASE_URL}comments`, {
+        headers: {
+          'Content-Type': 'application/json; charset=utf-8',
+        },
+        method: 'POST',
+        body: JSON.stringify({
+          item_id: mealId,
+          username: userName,
+          comment,
+        }),
+      });
+      if (res.ok) {
+        return {
+          success: true,
+          message: 'Comment Saved Successfully',
+        };
+      }
+      return {
+        success: false,
+        message: 'Error Saving Comment',
+      };
+    } catch (error) {
+      return {
+        success: false,
+        message: 'Error Saving Comment',
+      };
+    }
+  }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Involvement);
 
 
 /***/ }),
 
-/***/ "./src/modules/comments/render.js":
-/*!****************************************!*\
-  !*** ./src/modules/comments/render.js ***!
-  \****************************************/
+/***/ "./src/modules/comments/commentListExtracter.js":
+/*!******************************************************!*\
+  !*** ./src/modules/comments/commentListExtracter.js ***!
+  \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _assets_exit_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/exit.svg */ "./src/assets/exit.svg");
-/* harmony import */ var _involment_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../involment.js */ "./src/modules/involment.js");
-
-
-
-const createCommentsEl = async (meal) => {
-  const commentSectionEl = document.createElement('div');
+const commentListExtracter = async (mealId, involvement) => {
   const commentSectionTitle = document.createElement('h1');
   const commentDetailsList = document.createElement('ul');
 
-  commentSectionEl.classList.add('popup-comment-section');
+  commentDetailsList.classList.add('popup-comment-details-list');
+  commentSectionTitle.setAttribute('data-comment-section-id', mealId);
+  commentDetailsList.setAttribute('data-comment-section-id', mealId);
 
-  commentSectionEl.setAttribute('data-comment-section-id', meal.idMeal);
-  commentSectionTitle.setAttribute('data-comment-section-id', meal.idMeal);
-  commentDetailsList.setAttribute('data-comment-section-id', meal.idMeal);
-
-  const envolment = new _involment_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
-  const commentsData = await envolment.getComments(meal.idMeal);
+  const commentsData = await involvement.getComments(mealId);
 
   commentSectionTitle.innerText = `Comments(${commentsData.length})`;
 
@@ -845,9 +930,45 @@ const createCommentsEl = async (meal) => {
     listItem.innerText = `${element.creation_date} ${element.username} : ${element.comment}`;
     commentDetailsList.appendChild(listItem);
   });
+  return [commentSectionTitle, commentDetailsList];
+};
 
-  commentSectionEl.appendChild(commentSectionTitle);
-  commentSectionEl.appendChild(commentDetailsList);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentListExtracter);
+
+
+/***/ }),
+
+/***/ "./src/modules/comments/comments.js":
+/*!******************************************!*\
+  !*** ./src/modules/comments/comments.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _assets_exit_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/exit.svg */ "./src/assets/exit.svg");
+/* harmony import */ var _commentListExtracter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commentListExtracter.js */ "./src/modules/comments/commentListExtracter.js");
+/* harmony import */ var _createComment_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./createComment.js */ "./src/modules/comments/createComment.js");
+
+
+
+
+const createCommentsEl = async (meal, involvement) => {
+  const commentSectionEl = document.createElement('div');
+
+  commentSectionEl.classList.add('popup-comment-section');
+
+  commentSectionEl.setAttribute('data-comment-section-id', meal.idMeal);
+
+  const commentTitleAndList = await (0,_commentListExtracter_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+    meal.idMeal,
+    involvement,
+  );
+
+  commentSectionEl.appendChild(commentTitleAndList[0]);
+  commentSectionEl.appendChild(commentTitleAndList[1]);
 
   return commentSectionEl;
 };
@@ -870,7 +991,7 @@ const createMealDetailsListEl = (meal) => {
 
   return mealDetailsList;
 };
-const renderCommentPopUp = async (meal) => {
+const renderCommentPopUp = async (meal, involvement) => {
   const popUpEl = document.createElement('div');
   const mealImage = document.createElement('img');
   const mealTitle = document.createElement('h1');
@@ -897,8 +1018,10 @@ const renderCommentPopUp = async (meal) => {
   popUpEl.appendChild(exitBtnEl);
   popUpEl.appendChild(mealImage);
   popUpEl.appendChild(mealTitle);
+
   popUpEl.appendChild(createMealDetailsListEl(meal));
-  popUpEl.appendChild(await createCommentsEl(meal));
+  popUpEl.appendChild(await createCommentsEl(meal, involvement));
+  popUpEl.appendChild((0,_createComment_js__WEBPACK_IMPORTED_MODULE_2__["default"])(meal));
 
   document.body.appendChild(popUpEl);
 };
@@ -908,43 +1031,210 @@ const renderCommentPopUp = async (meal) => {
 
 /***/ }),
 
-/***/ "./src/modules/involment.js":
-/*!**********************************!*\
-  !*** ./src/modules/involment.js ***!
-  \**********************************/
+/***/ "./src/modules/comments/createComment.js":
+/*!***********************************************!*\
+  !*** ./src/modules/comments/createComment.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-class Envolment {
-  #APP_ID;
+const createNewComment = (meal) => {
+  const createCommentSection = document.createElement('form');
+  const createCommentFormTitle = document.createElement('h1');
+  const commentUserNameEl = document.createElement('input');
+  const commentUserInsightsEl = document.createElement('textarea');
+  const commentBtnEl = document.createElement('button');
 
-  #BASE_URL;
+  createCommentSection.classList.add('popup-comment-submit-form');
+  createCommentFormTitle.classList.add('popup-comment-submit-form-title');
+  commentUserNameEl.classList.add(
+    'popup-comment-submit-form-user-name',
+    'comment-input',
+  );
+  commentUserInsightsEl.classList.add(
+    'popup-comment-submit-form-insights',
+    'comment-input',
+  );
+  commentBtnEl.classList.add('popup-comment-submit-form-comment-btn');
 
-  constructor() {
-    this.#APP_ID = 'EI6t8oJ571YKMWTnlNDB';
-    this.#BASE_URL = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${
-      this.#APP_ID
-    }/`;
-  }
+  createCommentSection.setAttribute('data-mealID', meal.idMeal);
+  createCommentFormTitle.setAttribute('data-mealID', meal.idMeal);
+  commentUserNameEl.setAttribute('data-mealID', meal.idMeal);
+  commentUserInsightsEl.setAttribute('data-mealID', meal.idMeal);
+  commentBtnEl.setAttribute('data-mealID', meal.idMeal);
 
-  async getComments(mealId) {
-    try {
-      const res = await fetch(`${this.#BASE_URL}comments?item_id=${mealId}`);
-      const data = await res.json();
-      if (!res.ok) {
-        throw new Error('errror in retriving comments!');
-      }
-      return data;
-    } catch (error) {
-      throw new Error('errror in retriving comments!');
+  createCommentFormTitle.innerText = 'Add a comment';
+  commentUserNameEl.placeholder = 'Your name';
+  commentUserInsightsEl.placeholder = 'Your insights';
+  commentBtnEl.innerText = 'Comment';
+
+  commentUserNameEl.name = 'userName';
+  commentUserInsightsEl.name = 'insightEl';
+
+  commentUserNameEl.id = `commentUserNameField${meal.idMeal}`;
+  commentUserInsightsEl.id = `commentUserInsights${meal.idMeal}`;
+  commentBtnEl.type = 'submit';
+
+  createCommentSection.appendChild(createCommentFormTitle);
+  createCommentSection.appendChild(commentUserNameEl);
+  createCommentSection.appendChild(commentUserInsightsEl);
+  createCommentSection.appendChild(commentBtnEl);
+
+  return createCommentSection;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createNewComment);
+
+
+/***/ }),
+
+/***/ "./src/modules/comments/initComments.js":
+/*!**********************************************!*\
+  !*** ./src/modules/comments/initComments.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mealDB_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mealDB.js */ "./src/modules/mealDB.js");
+/* harmony import */ var _comments_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./comments.js */ "./src/modules/comments/comments.js");
+
+
+
+const initCommentPopUp = (id, involvement) => {
+  const mealContainer = document.querySelector('.section');
+  mealContainer.addEventListener('click', async (e) => {
+    if (e.target.classList.contains('comment-btn')) {
+      const mealDb = new _mealDB_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
+      const meal = await mealDb.lookUpMeal(id);
+      (0,_comments_js__WEBPACK_IMPORTED_MODULE_1__["default"])(meal, involvement);
     }
-  }
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initCommentPopUp);
+
+
+/***/ }),
+
+/***/ "./src/modules/comments/initCreateComment.js":
+/*!***************************************************!*\
+  !*** ./src/modules/comments/initCreateComment.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _commentListExtracter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commentListExtracter.js */ "./src/modules/comments/commentListExtracter.js");
+
+
+const initCreateComment = (involvement) => {
+  document.body.addEventListener('click', async (e) => {
+    e.preventDefault();
+    if (e.target.classList.contains('popup-comment-submit-form-comment-btn')) {
+      const form = document.querySelector('.popup-comment-submit-form');
+      const formData = new FormData(form);
+      const formProps = Object.fromEntries(formData);
+      if (formProps.userName === '' || formProps.insightEl === '') {
+        const errorMessage = document.createElement('p');
+        errorMessage.innerText = 'Please Provide Valid UserName and Comment';
+        form.prepend(errorMessage);
+      }
+      const res = await involvement.setComment(
+        e.target.dataset.mealid,
+        formProps.userName,
+        formProps.insightEl,
+      );
+      if (res.success) {
+        const commentSectionEl = document.querySelector(
+          '.popup-comment-section',
+        );
+        const commentListData = await (0,_commentListExtracter_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+          e.target.dataset.mealid,
+          involvement,
+        );
+        commentSectionEl.innerHTML = '';
+        commentSectionEl.appendChild(commentListData[0]);
+        commentSectionEl.appendChild(commentListData[1]);
+      }
+    }
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initCreateComment);
+
+
+/***/ }),
+
+/***/ "./src/modules/displayMeals.js":
+/*!*************************************!*\
+  !*** ./src/modules/displayMeals.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _meal_list_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./meal_list.js */ "./src/modules/meal_list.js");
+/* harmony import */ var _assets_heart_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/heart.svg */ "./src/assets/heart.svg");
+
+
+
+async function displayMeals() {
+  const meals = await (0,_meal_list_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  const mainSection = document.querySelector('.section');
+
+  meals.forEach((meal) => {
+    const mealElement = document.createElement('div');
+    const imgEl = document.createElement('img');
+    const mealTitleEl = document.createElement('h1');
+    const likeBtn = document.createElement('img');
+    const likeCounter = document.createElement('p');
+
+    const commentBtn = document.createElement('button');
+    const reservationBtn = document.createElement('button');
+
+    mealElement.setAttribute('data-mealID', meal.idMeal);
+    imgEl.setAttribute('data-mealID', meal.idMeal);
+    mealTitleEl.setAttribute('data-mealID', meal.idMeal);
+    likeBtn.setAttribute('data-mealID', meal.idMeal);
+    likeCounter.setAttribute('data-mealID', meal.idMeal);
+    commentBtn.setAttribute('data-mealID', meal.idMeal);
+    reservationBtn.setAttribute('data-mealID', meal.idMeal);
+
+    imgEl.src = new URL(meal.strMealThumb);
+    mealTitleEl.innerText = meal.strMeal;
+    likeBtn.src = _assets_heart_svg__WEBPACK_IMPORTED_MODULE_1__;
+    commentBtn.innerText = 'Comments';
+    reservationBtn.innerText = 'Reservations';
+
+    mealElement.classList.add('meal-item');
+    imgEl.classList.add('meal-item-img');
+    mealTitleEl.classList.add('meal-item-title');
+    likeBtn.classList.add('meal-item-like-btn');
+    commentBtn.classList.add('meal-item-comment-btn');
+    reservationBtn.classList.add('meal-item-reservation-btn');
+
+    mealElement.appendChild(imgEl);
+    mealElement.appendChild(mealTitleEl);
+    mealElement.appendChild(likeBtn);
+    mealElement.appendChild(likeCounter);
+    mealElement.appendChild(commentBtn);
+    mealElement.appendChild(reservationBtn);
+
+    mainSection.appendChild(mealElement);
+  });
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Envolment);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayMeals);
 
 
 /***/ }),
@@ -987,6 +1277,36 @@ class MealDb {
 
 /***/ }),
 
+/***/ "./src/modules/meal_list.js":
+/*!**********************************!*\
+  !*** ./src/modules/meal_list.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const apiURL = 'https://www.themealdb.com/api/json/v1/1/search.php?f=p';
+
+async function fetchMealsFromApi() {
+  try {
+    const response = await fetch(apiURL);
+    if (!response.ok) {
+      throw new Error(`HTTP Response Status: ${response.status}`);
+    }
+    const result = await response.json();
+    return result.meals; // Return the array of meals
+  } catch (error) {
+    return []; // Return an empty array if there's an error
+  }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchMealsFromApi);
+
+
+/***/ }),
+
 /***/ "./src/assets/exit.svg":
 /*!*****************************!*\
   !*** ./src/assets/exit.svg ***!
@@ -994,6 +1314,16 @@ class MealDb {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "exit.svg";
+
+/***/ }),
+
+/***/ "./src/assets/heart.svg":
+/*!******************************!*\
+  !*** ./src/assets/heart.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "heart.svg";
 
 /***/ }),
 
@@ -1125,13 +1455,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/reset.css */ "./src/styles/reset.css");
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
 /* harmony import */ var _assets_meal_logo_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/meal_logo.jpg */ "./src/assets/meal_logo.jpg");
-/* harmony import */ var _modules_comments_initComments_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/comments/initComments.js */ "./src/modules/comments/initComments.js");
+/* harmony import */ var _modules_displayMeals_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/displayMeals.js */ "./src/modules/displayMeals.js");
+/* harmony import */ var _modules_comments_initComments_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/comments/initComments.js */ "./src/modules/comments/initComments.js");
+/* harmony import */ var _modules_comments_initCreateComment_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/comments/initCreateComment.js */ "./src/modules/comments/initCreateComment.js");
+/* harmony import */ var _modules_Involvement_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/Involvement.js */ "./src/modules/Involvement.js");
 
 
 
 
 
-(0,_modules_comments_initComments_js__WEBPACK_IMPORTED_MODULE_3__["default"])('52772');
+
+
+
+const involvement = new _modules_Involvement_js__WEBPACK_IMPORTED_MODULE_6__["default"]();
+
+(0,_modules_comments_initComments_js__WEBPACK_IMPORTED_MODULE_4__["default"])('52774', involvement);
+(0,_modules_comments_initCreateComment_js__WEBPACK_IMPORTED_MODULE_5__["default"])(involvement);
+
+(0,_modules_displayMeals_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
 
 })();
 
