@@ -2,5 +2,10 @@ import './styles/reset.css';
 import './styles/style.css';
 import './assets/meal_logo.jpg';
 import initCommentPopUp from './modules/comments/initComments.js';
+import initCreateComment from './modules/comments/initCreateComment.js';
+import Involvement from './modules/Involvement.js';
 
-initCommentPopUp('52772');
+const involvement = new Involvement();
+
+initCommentPopUp('52774', involvement);
+initCreateComment(involvement);
