@@ -8,7 +8,7 @@ import Involvement from './modules/Involvement.js';
 
 const involvement = new Involvement();
 
-initCommentPopUp('52774', involvement);
+initCommentPopUp(involvement);
 initCreateComment(involvement);
 
 displayMeals();
