@@ -87,14 +87,15 @@ footer {
 .comment-popup {
   top: 0;
   bottom: 0;
-  left: 10rem;
+  left: 2rem;
   right: 0;
   z-index: 100;
   background-color: #fff;
   display: block;
-  width: 70%;
+  width: 90%;
   position: absolute;
   border: 0.5rem solid #000;
+  text-align: center;
 }
 
 .comment-popup-img {
@@ -122,9 +123,21 @@ footer {
   text-align: center;
 }
 
+.popup-comment-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.popup-comments-item {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 @media (min-width: 764px) {
   .comment-popup {
     left: 20rem;
+    width: 70%;
+    height: min-content;
   }
 
   .comment-popup-img {
