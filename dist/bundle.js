@@ -213,12 +213,12 @@ footer {
 .comment-popup {
   top: 0;
   bottom: 0;
-  left: 10rem;
+  left: 2rem;
   right: 0;
   z-index: 100;
   background-color: #fff;
   display: block;
-  width: 70%;
+  width: 90%;
   position: absolute;
   border: 0.5rem solid #000;
   text-align: center;
@@ -249,9 +249,21 @@ footer {
   text-align: center;
 }
 
+.popup-comment-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.popup-comments-item {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 @media (min-width: 764px) {
   .comment-popup {
     left: 20rem;
+    width: 70%;
+    height: min-content;
   }
 
   .comment-popup-img {
@@ -264,7 +276,7 @@ footer {
     margin-right: 5rem;
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,SAAS;EACT,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,cAAc;AAChB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,uBAAuB;AACzB;;AAEA,kBAAkB;;AAElB;EACE,MAAM;EACN,SAAS;EACT,WAAW;EACX,QAAQ;EACR,YAAY;EACZ,sBAAsB;EACtB,cAAc;EACd,UAAU;EACV,kBAAkB;EAClB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE;IACE,WAAW;EACb;;EAEA;IACE,YAAY;IACZ,aAAa;EACf;;EAEA;IACE,gBAAgB;IAChB,kBAAkB;EACpB;AACF","sourcesContent":[".logo {\n  width: 10rem;\n  height: 10rem;\n}\n\nheader {\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  font-size: 1.4rem;\n  gap: 5rem;\n}\n\n.nav-links {\n  display: flex;\n  flex-direction: row;\n  gap: 2.4rem;\n}\n\n.nav-link {\n  color: #000;\n  text-decoration: none;\n  font-weight: 500;\n}\n\nsvg {\n  width: 20px;\n  height: 15px;\n}\n\nfooter {\n  border-top: 0.3rem solid #000;\n  height: 5rem;\n  font-size: 1.4rem;\n}\n\n.footer-text {\n  width: 80%;\n  margin: 0 auto;\n  padding-top: 1rem;\n  color: #000;\n  font-weight: 500;\n}\n\n.nav_link img {\n  width: 70px;\n  height: 50px;\n  border-radius: 45%;\n  margin: 10px;\n}\n\n#imgg img {\n  width: 110px;\n  height: 95px;\n}\n\n.interactive-btns {\n  display: flex;\n  flex-direction: column;\n}\n\n.nav_link ul {\n  display: flex;\n  list-style: none;\n  gap: 20px;\n  margin-left: 700px;\n}\n\n.section {\n  width: 80%;\n  margin: 0 auto;\n}\n\n.body_sec {\n  display: flex;\n}\n\n.body_sec2 {\n  display: flex;\n  margin-top: 70px;\n  justify-content: center;\n}\n\n/* comment popup */\n\n.comment-popup {\n  top: 0;\n  bottom: 0;\n  left: 10rem;\n  right: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: block;\n  width: 70%;\n  position: absolute;\n  border: 0.5rem solid #000;\n  text-align: center;\n}\n\n.comment-popup-img {\n  margin: 3.2rem auto;\n  clear: both;\n  width: 30rem;\n  height: 24rem;\n}\n\n.comment-popup-title {\n  text-align: center;\n}\n\n.comment-popup-exit-btn {\n  width: 4.2rem;\n  height: 4.2rem;\n  float: right;\n  margin-top: 2rem;\n  margin-right: 2rem;\n}\n\n.comment-popup-meal-details-list {\n  font-size: 1.5rem;\n  font-weight: 400;\n  text-align: center;\n}\n\n@media (min-width: 764px) {\n  .comment-popup {\n    left: 20rem;\n  }\n\n  .comment-popup-img {\n    width: 40rem;\n    height: 30rem;\n  }\n\n  .comment-popup-exit-btn {\n    margin-top: 4rem;\n    margin-right: 5rem;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,SAAS;EACT,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,cAAc;AAChB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,uBAAuB;AACzB;;AAEA,kBAAkB;;AAElB;EACE,MAAM;EACN,SAAS;EACT,UAAU;EACV,QAAQ;EACR,YAAY;EACZ,sBAAsB;EACtB,cAAc;EACd,UAAU;EACV,kBAAkB;EAClB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE;IACE,WAAW;IACX,UAAU;IACV,mBAAmB;EACrB;;EAEA;IACE,YAAY;IACZ,aAAa;EACf;;EAEA;IACE,gBAAgB;IAChB,kBAAkB;EACpB;AACF","sourcesContent":[".logo {\n  width: 10rem;\n  height: 10rem;\n}\n\nheader {\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  font-size: 1.4rem;\n  gap: 5rem;\n}\n\n.nav-links {\n  display: flex;\n  flex-direction: row;\n  gap: 2.4rem;\n}\n\n.nav-link {\n  color: #000;\n  text-decoration: none;\n  font-weight: 500;\n}\n\nsvg {\n  width: 20px;\n  height: 15px;\n}\n\nfooter {\n  border-top: 0.3rem solid #000;\n  height: 5rem;\n  font-size: 1.4rem;\n}\n\n.footer-text {\n  width: 80%;\n  margin: 0 auto;\n  padding-top: 1rem;\n  color: #000;\n  font-weight: 500;\n}\n\n.nav_link img {\n  width: 70px;\n  height: 50px;\n  border-radius: 45%;\n  margin: 10px;\n}\n\n#imgg img {\n  width: 110px;\n  height: 95px;\n}\n\n.interactive-btns {\n  display: flex;\n  flex-direction: column;\n}\n\n.nav_link ul {\n  display: flex;\n  list-style: none;\n  gap: 20px;\n  margin-left: 700px;\n}\n\n.section {\n  width: 80%;\n  margin: 0 auto;\n}\n\n.body_sec {\n  display: flex;\n}\n\n.body_sec2 {\n  display: flex;\n  margin-top: 70px;\n  justify-content: center;\n}\n\n/* comment popup */\n\n.comment-popup {\n  top: 0;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: block;\n  width: 90%;\n  position: absolute;\n  border: 0.5rem solid #000;\n  text-align: center;\n}\n\n.comment-popup-img {\n  margin: 3.2rem auto;\n  clear: both;\n  width: 30rem;\n  height: 24rem;\n}\n\n.comment-popup-title {\n  text-align: center;\n}\n\n.comment-popup-exit-btn {\n  width: 4.2rem;\n  height: 4.2rem;\n  float: right;\n  margin-top: 2rem;\n  margin-right: 2rem;\n}\n\n.comment-popup-meal-details-list {\n  font-size: 1.5rem;\n  font-weight: 400;\n  text-align: center;\n}\n\n.popup-comment-section {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\n\n.popup-comments-item {\n  font-size: 1.3rem;\n  font-weight: 500;\n}\n\n@media (min-width: 764px) {\n  .comment-popup {\n    left: 20rem;\n    width: 70%;\n    height: min-content;\n  }\n\n  .comment-popup-img {\n    width: 40rem;\n    height: 30rem;\n  }\n\n  .comment-popup-exit-btn {\n    margin-top: 4rem;\n    margin-right: 5rem;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -816,6 +828,8 @@ const createCommentsEl = async (meal) => {
   const commentSectionTitle = document.createElement('h1');
   const commentDetailsList = document.createElement('ul');
 
+  commentSectionEl.classList.add('popup-comment-section');
+
   commentSectionEl.setAttribute('data-comment-section-id', meal.idMeal);
   commentSectionTitle.setAttribute('data-comment-section-id', meal.idMeal);
   commentDetailsList.setAttribute('data-comment-section-id', meal.idMeal);
@@ -827,6 +841,7 @@ const createCommentsEl = async (meal) => {
 
   commentsData.forEach((element) => {
     const listItem = document.createElement('p');
+    listItem.classList.add('popup-comments-item');
     listItem.innerText = `${element.creation_date} ${element.username} : ${element.comment}`;
     commentDetailsList.appendChild(listItem);
   });
