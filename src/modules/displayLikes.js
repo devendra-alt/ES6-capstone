@@ -1,6 +1,4 @@
-const baseApiURL = 'https://www.themealdb.com/api/json/v1/1/search.php?f=p';
-const involvementApiURL =
-  'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB';
+const involvementApiURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB';
 
 const displayLikes = async (id) => {
   try {
@@ -16,7 +14,7 @@ const displayLikes = async (id) => {
       }
     });
     return result;
-  } catch (error) {}
+  } catch (error) { throw new Error('error getting likes to display'); }
 };
 
 export default displayLikes;
