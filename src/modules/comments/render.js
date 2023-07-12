@@ -1,3 +1,6 @@
+import exit from '../../assets/exit.svg';
+import Envolment from '../involment.js';
+
 const createCommentsEl = async (meal) => {
   const commentSectionEl = document.createElement('div');
   const commentSectionTitle = document.createElement('h1');
@@ -27,6 +30,24 @@ const createCommentsEl = async (meal) => {
   return commentSectionEl;
 };
 
+const createMealDetailsListEl = (meal) => {
+  const mealDetailsList = document.createElement('ul');
+  const mealCategoryEl = document.createElement('li');
+  const mealRegionEl = document.createElement('li');
+  const mealTag = document.createElement('li');
+
+  mealDetailsList.classList.add('comment-popup-meal-details-list');
+
+  mealCategoryEl.innerText = `Meal Category : ${meal.strCategory}`;
+  mealRegionEl.innerText = `Meal Region : ${meal.strArea}`;
+  mealTag.innerText = `Meal Tags : ${meal.strTags}`;
+
+  mealDetailsList.appendChild(mealCategoryEl);
+  mealDetailsList.appendChild(mealRegionEl);
+  mealDetailsList.appendChild(mealTag);
+
+  return mealDetailsList;
+};
 const renderCommentPopUp = async (meal) => {
   const popUpEl = document.createElement('div');
   const mealImage = document.createElement('img');
@@ -59,3 +80,5 @@ const renderCommentPopUp = async (meal) => {
 
   document.body.appendChild(popUpEl);
 };
+
+export default renderCommentPopUp;
