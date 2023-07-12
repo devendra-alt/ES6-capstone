@@ -1,5 +1,5 @@
 import exit from '../../assets/exit.svg';
-import Envolment from '../involment.js';
+import Involvement from '../Involvement.js';
 
 const createCommentsEl = async (meal) => {
   const commentSectionEl = document.createElement('div');
@@ -12,8 +12,8 @@ const createCommentsEl = async (meal) => {
   commentSectionTitle.setAttribute('data-comment-section-id', meal.idMeal);
   commentDetailsList.setAttribute('data-comment-section-id', meal.idMeal);
 
-  const envolment = new Envolment();
-  const commentsData = await envolment.getComments(meal.idMeal);
+  const involvement = new Involvement();
+  const commentsData = await involvement.getComments(meal.idMeal);
 
   commentSectionTitle.innerText = `Comments(${commentsData.length})`;
 
