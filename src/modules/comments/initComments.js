@@ -6,7 +6,6 @@ const initCommentPopUp = (involvement) => {
   mealContainer.addEventListener('click', async (e) => {
     if (e.target.classList.contains('meal-item-comment-btn')) {
       const mealDb = new MealDb();
-      console.log(e.target.dataset);
       const meal = await mealDb.lookUpMeal(e.target.dataset.mealid);
       renderCommentPopUp(meal, involvement);
     }

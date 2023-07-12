@@ -1,4 +1,4 @@
-import commentCounter from './commentCounter';
+import commentCounter from './commentCounter.js';
 
 const commentListExtracter = async (mealId, involvement) => {
   const commentSectionTitle = document.createElement('h1');
@@ -17,7 +17,7 @@ const commentListExtracter = async (mealId, involvement) => {
     commentDetailsList.appendChild(listItem);
   });
   commentSectionTitle.innerText = `Comments(${commentCounter(
-    commentDetailsList
+    commentDetailsList,
   )})`;
   return [commentSectionTitle, commentDetailsList];
 };
