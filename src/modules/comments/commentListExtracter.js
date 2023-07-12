@@ -1,3 +1,5 @@
+import commentCounter from './commentCounter';
+
 const commentListExtracter = async (mealId, involvement) => {
   const commentSectionTitle = document.createElement('h1');
   const commentDetailsList = document.createElement('ul');
@@ -8,14 +10,15 @@ const commentListExtracter = async (mealId, involvement) => {
 
   const commentsData = await involvement.getComments(mealId);
 
-  commentSectionTitle.innerText = `Comments(${commentsData.length})`;
-
   commentsData.forEach((element) => {
     const listItem = document.createElement('p');
     listItem.classList.add('popup-comments-item');
     listItem.innerText = `${element.creation_date} ${element.username} : ${element.comment}`;
     commentDetailsList.appendChild(listItem);
   });
+  commentSectionTitle.innerText = `Comments(${commentCounter(
+    commentDetailsList
+  )})`;
   return [commentSectionTitle, commentDetailsList];
 };
 
