@@ -1,11 +1,12 @@
 import fetchMealsFromApi from './meal_list.js';
 import likeImg from '../assets/heart.svg';
+import displayLikes from './displayLikes.js';
 
 async function displayMeals() {
   const meals = await fetchMealsFromApi();
   const mainSection = document.querySelector('.section');
 
-  meals.forEach((meal) => {
+  meals.forEach(async (meal) => {
     const mealElement = document.createElement('div');
     const imgEl = document.createElement('img');
     const mealTitleEl = document.createElement('h1');
@@ -28,7 +29,8 @@ async function displayMeals() {
     likeBtn.src = likeImg;
     commentBtn.innerText = 'Comments';
     reservationBtn.innerText = 'Reservations';
-
+    const likesItems = await displayLikes(meal.idMeal);
+    likeCounter.innerText = likesItems;
     mealElement.classList.add('meal-item');
     imgEl.classList.add('meal-item-img');
     mealTitleEl.classList.add('meal-item-title');
