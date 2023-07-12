@@ -4,7 +4,16 @@ const BundleAnalyzerPlugin =
   require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = {
   mode: 'development',
-  entry: { bundle: path.resolve(__dirname, 'src/index.js') },
+  entry: { bundle: path.resolve(__dirname, 'src/index.js'),index: './src/index.js',
+  reservations: './src/reservationsModal/reservations.js',
+
+  pullMealsData: './src/reservationsModal/pullMeal.js',
+  fetchReservations: './src/reservationsModal/fetchReservations.js',
+
+
+
+},
+ 
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',

@@ -2,6 +2,144 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/reservations.css":
+/*!***************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/reservations.css ***!
+  \***************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap);"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.reservationsSection {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 5rem 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.reservationsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 2px solid #5800ff;
+  padding: 3.8rem;
+  width: 46rem;
+  margin: auto;
+  color: rgb(46, 46, 46);
+  font-size: 0.8rem;
+}
+
+.close-icon {
+  text-align: right;
+  cursor: pointer;
+}
+
+.movieImage {
+  margin-bottom: 2rem;
+}
+
+.headings {
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.9px solid #ffffff59;
+  color: #fff;
+}
+
+.movieTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5800ff;
+}
+
+.sectionContainers {
+  padding: 1rem;
+  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);
+  margin-top: 3rem;
+  background-color: #5800ff;
+  color: #fff;
+}
+
+.formFields {
+  display: block;
+  width: 80%;
+  height: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border: 1.4px solid rgba(35, 31, 32, 0.124);
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.formFields:focus {
+  border: none;
+  outline: none;
+}
+
+.submitBtn {
+  display: flex;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #5800ff;
+  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);
+}
+
+.star-reservation {
+  display: block;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.giveReservationText {
+  padding-bottom: 0.6rem;
+}
+
+.star-reservation input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url('https://dl.dropboxusercontent.com/s/1oh3h6o20k4285x/star-empty.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);
+}
+
+.star-reservation input:checked + label {
+  background-image: url('https://dl.dropboxusercontent.com/s/oij2qr7r2ulfi4i/star-filled.png');
+}
+`, "",{"version":3,"sources":["webpack://./src/styles/reservations.css"],"names":[],"mappings":"AAEA;EACE,aAAa;EACb,eAAe;EACf,MAAM;EACN,QAAQ;EACR,OAAO;EACP,SAAS;EACT,kBAAkB;EAClB,yCAAyC;EACzC,2BAA2B;EAC3B,eAAe;EACf,qCAAqC;AACvC;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,sBAAsB;EACtB,yBAAyB;EACzB,eAAe;EACf,YAAY;EACZ,YAAY;EACZ,sBAAsB;EACtB,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,qBAAqB;EACrB,sBAAsB;EACtB,oCAAoC;EACpC,WAAW;AACb;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,6CAA6C;EAC7C,gBAAgB;EAChB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,cAAc;EACd,UAAU;EACV,YAAY;EACZ,mBAAmB;EACnB,mBAAmB;EACnB,2CAA2C;EAC3C,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,oBAAoB;EACpB,YAAY;EACZ,qBAAqB;EACrB,cAAc;EACd,6CAA6C;AAC/C;;AAEA;EACE,cAAc;EACd,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,qBAAqB;EACrB,WAAW;EACX,YAAY;EACZ,2FAA2F;EAC3F,wBAAwB;EACxB,4BAA4B;EAC5B,2BAA2B;EAC3B,eAAe;EACf,6CAA6C;AAC/C;;AAEA;EACE,4FAA4F;AAC9F","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');\n\n.reservationsSection {\n  display: flex;\n  position: fixed;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n  overflow-y: scroll;\n  background-color: rgb(255, 255, 255, 0.1);\n  backdrop-filter: blur(10px);\n  padding: 5rem 0;\n  font-family: 'Montserrat', sans-serif;\n}\n\n.reservationsContainer {\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 2px solid #5800ff;\n  padding: 3.8rem;\n  width: 46rem;\n  margin: auto;\n  color: rgb(46, 46, 46);\n  font-size: 0.8rem;\n}\n\n.close-icon {\n  text-align: right;\n  cursor: pointer;\n}\n\n.movieImage {\n  margin-bottom: 2rem;\n}\n\n.headings {\n  margin-bottom: 0.8rem;\n  padding-bottom: 0.5rem;\n  border-bottom: 1.9px solid #ffffff59;\n  color: #fff;\n}\n\n.movieTitle {\n  font-size: 2rem;\n  font-weight: 700;\n  color: #5800ff;\n}\n\n.sectionContainers {\n  padding: 1rem;\n  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);\n  margin-top: 3rem;\n  background-color: #5800ff;\n  color: #fff;\n}\n\n.formFields {\n  display: block;\n  width: 80%;\n  height: 3rem;\n  border-radius: 1rem;\n  margin-bottom: 1rem;\n  border: 1.4px solid rgba(35, 31, 32, 0.124);\n  padding-left: 1rem;\n  font-size: 1rem;\n}\n\n.formFields:focus {\n  border: none;\n  outline: none;\n}\n\n.submitBtn {\n  display: flex;\n  background-color: #fff;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 0.5rem;\n  color: #5800ff;\n  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);\n}\n\n.star-reservation {\n  display: block;\n  margin-bottom: 2rem;\n  padding-left: 1rem;\n}\n\n.giveReservationText {\n  padding-bottom: 0.6rem;\n}\n\n.star-reservation input {\n  display: none;\n}\n\nlabel {\n  display: inline-block;\n  width: 25px;\n  height: 25px;\n  background-image: url('https://dl.dropboxusercontent.com/s/1oh3h6o20k4285x/star-empty.png');\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  cursor: pointer;\n  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);\n}\n\n.star-reservation input:checked + label {\n  background-image: url('https://dl.dropboxusercontent.com/s/oij2qr7r2ulfi4i/star-filled.png');\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/reset.css":
 /*!********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/reset.css ***!
@@ -329,6 +467,60 @@ module.exports = function (item) {
   }
   return [content].join("\n");
 };
+
+/***/ }),
+
+/***/ "./src/styles/reservations.css":
+/*!*************************************!*\
+  !*** ./src/styles/reservations.css ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_reservations_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./reservations.css */ "./node_modules/css-loader/dist/cjs.js!./src/styles/reservations.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_reservations_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_reservations_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_reservations_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_reservations_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
 
 /***/ }),
 
@@ -832,13 +1024,37 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   fetchedReservationData: () => (/* binding */ fetchedReservationData),
+/* harmony export */   getMealData: () => (/* binding */ getMealData),
+/* harmony export */   reservationsModal: () => (/* binding */ reservationsModal)
+/* harmony export */ });
 /* harmony import */ var _styles_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/reset.css */ "./src/styles/reset.css");
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
 /* harmony import */ var _assets_meal_logo_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/meal_logo.jpg */ "./src/assets/meal_logo.jpg");
+/* harmony import */ var _styles_reservations_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/reservations.css */ "./src/styles/reservations.css");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '.fetchReservations'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '.reservations'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 
 
+
+
+
+
+
+
+
+
+const reservationsModal = new Object(function webpackMissingModule() { var e = new Error("Cannot find module '.reservations'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();
+const getMealData = new Object(function webpackMissingModule() { var e = new Error("Cannot find module '.fetchReservations'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();
+const fetchedReservationData = new Object(function webpackMissingModule() { var e = new Error("Cannot find module '.fetchReservations'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();
+
+
+
+    
+  
 })();
 
 /******/ })()
