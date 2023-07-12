@@ -1,27 +1,4 @@
-
-// const apiURL = 'http://www.themealdb.com/api/json/v1/1/search.php?f=a';
-
-// const fetchMealsFromApi = async () => {
-//   const response = await fetch(apiURL, {
-//     method: 'GET',
-  
-    
-//   });
-
-//   if (!response.ok) {
-//     throw new Error(`HTTP Response Status: ${response.status}`);
-//   }
-
-//   const result = await response.json();
-//   console.log(result);
-//   return result.id; // Save and return the game ID
-// };
-
-// export default fetchMealsFromApi;
-
-
-
-const apiURL = 'http://www.themealdb.com/api/json/v1/1/search.php?f=a';
+const apiURL = 'https://www.themealdb.com/api/json/v1/1/search.php?f=p';
 
 async function fetchMealsFromApi() {
   try {
@@ -30,7 +7,6 @@ async function fetchMealsFromApi() {
       throw new Error(`HTTP Response Status: ${response.status}`);
     }
     const result = await response.json();
-    console.log(response)
     return result.meals; // Return the array of meals
   } catch (error) {
     console.error('Error fetching meals:', error);
@@ -38,5 +14,4 @@ async function fetchMealsFromApi() {
   }
 }
 
-// Example usage: fetching meals and logging them to the console
-fetchMealsFromApi().then((meals) => console.log(meals));
+export default fetchMealsFromApi;

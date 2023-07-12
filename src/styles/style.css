@@ -70,6 +70,10 @@ footer {
 .section {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  padding-bottom: 18rem;
 }
 
 .body_sec {
@@ -80,4 +84,25 @@ footer {
   display: flex;
   margin-top: 70px;
   justify-content: center;
+}
+
+/* display meals */
+
+.meal-item {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  gap: 1.2rem;
+}
+
+.meal-item-img {
+  width: 100%;
+}
+
+.meal-item-title {
+  font-size: 1.4rem;
+}
+
+.meal-item-like-btn {
+  width: 2.4rem;
 }

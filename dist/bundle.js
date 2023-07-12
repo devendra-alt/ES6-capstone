@@ -195,6 +195,10 @@ footer {
 .section {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  padding-bottom: 18rem;
 }
 
 .body_sec {
@@ -206,7 +210,28 @@ footer {
   margin-top: 70px;
   justify-content: center;
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,SAAS;EACT,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,cAAc;AAChB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,uBAAuB;AACzB","sourcesContent":[".logo {\r\n  width: 10rem;\r\n  height: 10rem;\r\n}\r\n\r\nheader {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  align-items: center;\r\n  font-size: 1.4rem;\r\n  gap: 5rem;\r\n}\r\n\r\n.nav-links {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 2.4rem;\r\n}\r\n\r\n.nav-link {\r\n  color: #000;\r\n  text-decoration: none;\r\n  font-weight: 500;\r\n}\r\n\r\nsvg {\r\n  width: 20px;\r\n  height: 15px;\r\n}\r\n\r\nfooter {\r\n  border-top: 0.3rem solid #000;\r\n  height: 5rem;\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.footer-text {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  padding-top: 1rem;\r\n  color: #000;\r\n  font-weight: 500;\r\n}\r\n\r\n.nav_link img {\r\n  width: 70px;\r\n  height: 50px;\r\n  border-radius: 45%;\r\n  margin: 10px;\r\n}\r\n\r\n#imgg img {\r\n  width: 110px;\r\n  height: 95px;\r\n}\r\n\r\n.interactive-btns {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.nav_link ul {\r\n  display: flex;\r\n  list-style: none;\r\n  gap: 20px;\r\n  margin-left: 700px;\r\n}\r\n\r\n.section {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.body_sec {\r\n  display: flex;\r\n}\r\n\r\n.body_sec2 {\r\n  display: flex;\r\n  margin-top: 70px;\r\n  justify-content: center;\r\n}\r\n"],"sourceRoot":""}]);
+
+/* display meals */
+
+.meal-item {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  gap: 1.2rem;
+}
+
+.meal-item-img {
+  width: 100%;
+}
+
+.meal-item-title {
+  font-size: 1.4rem;
+}
+
+.meal-item-like-btn {
+  width: 2.4rem;
+}
+`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,SAAS;EACT,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,eAAe;EACf,WAAW;EACX,qBAAqB;AACvB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,uBAAuB;AACzB;;AAEA,kBAAkB;;AAElB;EACE,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;AACf","sourcesContent":[".logo {\r\n  width: 10rem;\r\n  height: 10rem;\r\n}\r\n\r\nheader {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  align-items: center;\r\n  font-size: 1.4rem;\r\n  gap: 5rem;\r\n}\r\n\r\n.nav-links {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 2.4rem;\r\n}\r\n\r\n.nav-link {\r\n  color: #000;\r\n  text-decoration: none;\r\n  font-weight: 500;\r\n}\r\n\r\nsvg {\r\n  width: 20px;\r\n  height: 15px;\r\n}\r\n\r\nfooter {\r\n  border-top: 0.3rem solid #000;\r\n  height: 5rem;\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.footer-text {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  padding-top: 1rem;\r\n  color: #000;\r\n  font-weight: 500;\r\n}\r\n\r\n.nav_link img {\r\n  width: 70px;\r\n  height: 50px;\r\n  border-radius: 45%;\r\n  margin: 10px;\r\n}\r\n\r\n#imgg img {\r\n  width: 110px;\r\n  height: 95px;\r\n}\r\n\r\n.interactive-btns {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.nav_link ul {\r\n  display: flex;\r\n  list-style: none;\r\n  gap: 20px;\r\n  margin-left: 700px;\r\n}\r\n\r\n.section {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  gap: 2.4rem;\r\n  padding-bottom: 18rem;\r\n}\r\n\r\n.body_sec {\r\n  display: flex;\r\n}\r\n\r\n.body_sec2 {\r\n  display: flex;\r\n  margin-top: 70px;\r\n  justify-content: center;\r\n}\r\n\r\n/* display meals */\r\n\r\n.meal-item {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 18rem;\r\n  gap: 1.2rem;\r\n}\r\n\r\n.meal-item-img {\r\n  width: 100%;\r\n}\r\n\r\n.meal-item-title {\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.meal-item-like-btn {\r\n  width: 2.4rem;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -707,6 +732,103 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/modules/displayMeals.js":
+/*!*************************************!*\
+  !*** ./src/modules/displayMeals.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _meal_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./meal_list */ "./src/modules/meal_list.js");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '../assets/heart.svg'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+
+async function displayMeals() {
+  const meals = await (0,_meal_list__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  const mainSection = document.querySelector('.section');
+
+  meals.forEach((meal) => {
+    console.log(meal);
+    const mealElement = document.createElement('div');
+    const imgEl = document.createElement('img');
+    const mealTitleEl = document.createElement('h1');
+    const likeBtn = document.createElement('img');
+    const likeCounter = document.createElement('p');
+
+    const commentBtn = document.createElement('button');
+    const reservationBtn = document.createElement('button');
+
+    mealElement.setAttribute('data-mealID', meal.idMeal);
+    imgEl.setAttribute('data-mealID', meal.idMeal);
+    mealTitleEl.setAttribute('data-mealID', meal.idMeal);
+    likeBtn.setAttribute('data-mealID', meal.idMeal);
+    likeCounter.setAttribute('data-mealID', meal.idMeal);
+    commentBtn.setAttribute('data-mealID', meal.idMeal);
+    reservationBtn.setAttribute('data-mealID', meal.idMeal);
+
+    imgEl.src = new URL(meal.strMealThumb);
+    mealTitleEl.innerText = meal.strMeal;
+    likeBtn.src = Object(function webpackMissingModule() { var e = new Error("Cannot find module '../assets/heart.svg'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+    commentBtn.innerText = 'Comments';
+    reservationBtn.innerText = 'Reservations';
+
+    mealElement.classList.add('meal-item');
+    imgEl.classList.add('meal-item-img');
+    mealTitleEl.classList.add('meal-item-title');
+    likeBtn.classList.add('meal-item-like-btn');
+    commentBtn.classList.add('meal-item-comment-btn');
+    reservationBtn.classList.add('meal-item-reservation-btn');
+
+    mealElement.appendChild(imgEl);
+    mealElement.appendChild(mealTitleEl);
+    mealElement.appendChild(likeBtn);
+    mealElement.appendChild(likeCounter);
+    mealElement.appendChild(commentBtn);
+    mealElement.appendChild(reservationBtn);
+
+    mainSection.appendChild(mealElement);
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayMeals);
+
+
+/***/ }),
+
+/***/ "./src/modules/meal_list.js":
+/*!**********************************!*\
+  !*** ./src/modules/meal_list.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const apiURL = 'https://www.themealdb.com/api/json/v1/1/search.php?f=p';
+
+async function fetchMealsFromApi() {
+  try {
+    const response = await fetch(apiURL);
+    if (!response.ok) {
+      throw new Error(`HTTP Response Status: ${response.status}`);
+    }
+    const result = await response.json();
+    return result.meals; // Return the array of meals
+  } catch (error) {
+    console.error('Error fetching meals:', error);
+    return []; // Return an empty array if there's an error
+  }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchMealsFromApi);
+
+
+/***/ }),
+
 /***/ "./src/assets/meal_logo.jpg":
 /*!**********************************!*\
   !*** ./src/assets/meal_logo.jpg ***!
@@ -835,6 +957,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/reset.css */ "./src/styles/reset.css");
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
 /* harmony import */ var _assets_meal_logo_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/meal_logo.jpg */ "./src/assets/meal_logo.jpg");
+/* harmony import */ var _modules_meal_list_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/meal_list.js */ "./src/modules/meal_list.js");
+/* harmony import */ var _modules_displayMeals_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/displayMeals.js */ "./src/modules/displayMeals.js");
+
+
+
+
+
+
+// When the page loads, fetch meals from the API
+window.addEventListener('load', () => {
+  (0,_modules_meal_list_js__WEBPACK_IMPORTED_MODULE_3__["default"])()
+    .then((meals) => {
+      // Display the list of meals on the page
+      meals.forEach((meal) => {
+        // Access meal properties like meal.strMeal (title) and meal.strMealThumb (image URL)
+        // Use the DOM API or a front-end framework like React, Vue, or Angular to render the meals on the page
+      });
+    })
+    .catch((error) => console.error('Error:', error));
+});
 
 
 
