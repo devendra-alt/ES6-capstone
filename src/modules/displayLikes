@@ -1,30 +1,22 @@
 const baseApiURL = 'https://www.themealdb.com/api/json/v1/1/search.php?f=p';
-const involvementApiURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB'; // Replace with your Involvement API URL
+const involvementApiURL =
+  'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB';
 
-const fetchMealsFromApi = async () => {
-  const response = await fetch(baseApiURL);
-  if (!response.ok) {
-    throw new Error(`HTTP Response Status: ${response.status}`);
-  }
-  const result = await response.json();
-
-  const meals = result.meals;
-  const mealLikesPromises = meals.map(async (meal) => {
-    const response = await fetch(`${involvementApiURL}?mealId=${meal.idMeal}`);
-    if (!response.ok) {
-      throw new Error(`HTTP Response Status: ${response.status}`);
+const displayLikes = async (id) => {
+  try {
+    const res = await fetch(`${involvementApiURL}/likes`);
+    if (!res.ok) {
+      throw new Error('error getting likes to display');
     }
-    const result = await response.json();
-    return result.likes;
-  });
-
-  const mealLikes = await Promise.all(mealLikesPromises);
-
-  meals.forEach((meal, index) => {
-    meal.likes = mealLikes[index];
-  });
-
-  return meals;
+    const data = await res.json();
+    let result = 0;
+    await data.forEach((element) => {
+      if (element.item_id === id) {
+        result = element.likes;
+      }
+    });
+    return result;
+  } catch (error) {}
 };
 
-export default fetchMealsFromApi;
+export default displayLikes;
