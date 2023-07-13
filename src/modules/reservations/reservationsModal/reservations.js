@@ -1,6 +1,6 @@
-import PullMealData from './pullMeal';
+import PullMealData from "./pullMeal";
 
-import FetchReservations from './fetchReservations.js';
+import FetchReservations from "./fetchReservations.js";
 export default class Reservations {
   constructor() {
     this.reservationCount = 0;
@@ -26,8 +26,8 @@ export default class Reservations {
 
     const getMealsDetails = new PullMealData();
     const mealsDetails = await getMealsDetails.fetchMealsData(this.mealID);
-    const reservationsSection = document.createElement('section');
-    reservationsSection.className = 'reservationsSection';
+    const reservationsSection = document.createElement("section");
+    reservationsSection.className = "reservationsSection";
     reservationsSection.innerHTML = `
     <div class="reservationsContainer">
       <p class="close-icon"><span class="material-symbols-outlined">close</span></p>
@@ -41,37 +41,41 @@ export default class Reservations {
     </div>`;
     document.body.appendChild(reservationsSection);
     this.displayReservations();
-    const reservationCloseBtns = document.querySelector('.close-icon');
+    const reservationCloseBtns = document.querySelector(".close-icon");
     this.closeReservationModal(reservationCloseBtns);
   }
+  
   closeReservationModal(reservationCloseBtns) {
-    reservationCloseBtns.addEventListener('click', () => {
+    reservationCloseBtns.addEventListener("click", () => {
       reservationCloseBtns.parentNode.parentNode.remove();
     });
   }
+
   updateCounter(fetchedReservationArr) {
     this.reservationCount = fetchedReservationArr.length;
     const reservationsHeading = document.querySelectorAll(
-      '.reservationsHeading'
+      ".reservationsHeading"
     );
     reservationsHeading.forEach((each) => {
       each.textContent = `Reservations (${this.reservationCount}):`;
     });
   }
+
   async displayReservations() {
     const fetchReservations = await this.fetchReservationsData();
     const existingReservations = document.querySelector(
-      '.existingReservations'
+      ".existingReservations"
     );
-    existingReservations.innerHTML = '';
+    existingReservations.innerHTML = "";
     this.updateCounter(fetchReservations);
     fetchReservations.forEach((each) => {
-      const reservation = document.createElement('p');
-      reservation.classList.add('reservation-list-item');
+      const reservation = document.createElement("p");
+      reservation.classList.add("reservation-list-item");
       reservation.textContent = `${each.date_start} - ${each.date_end} by ${each.username}`;
       existingReservations.appendChild(reservation);
     });
   }
+
   showReservations(mealId) {
     this.createReservationsModal(mealId);
   }

@@ -9,7 +9,7 @@ export default class DisplayAfterPost {
     // Updates counter
     this.reservationCount = fetchedReservationArr.length;
     const reservationsHeading = document.querySelectorAll(
-      '.reservationsHeading'
+      '.reservationsHeading',
     );
     reservationsHeading.forEach((each) => {
       each.textContent = `Reservations (${this.reservationCount}):`;
@@ -22,7 +22,7 @@ export default class DisplayAfterPost {
     const fetchedReservation = await fetchReservations.fetchReservationsData();
     const fetchedReservationArr = Array.from(fetchedReservation);
     const existingReservations = document.querySelectorAll(
-      '.existingReservations'
+      '.existingReservations',
     );
 
     // Clear existing reservations
