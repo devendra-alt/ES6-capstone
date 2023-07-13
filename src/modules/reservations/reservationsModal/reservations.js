@@ -1,20 +1,31 @@
-import PullMealData from './pullMeal';
-import FetchReservations from './fetchReservations.js';
+import PostResevation from './postReservation.js';
+import PullMealData from './pullMeal.js';
 
 export default class Reservations {
   constructor() {
-    this.body = document.querySelector('body');
-    this.showReservations();
-    this.fetchReservations = new FetchReservations();
     this.reservationCount = 0;
-    this.showReservations();
+    this.mealID = null;
+    this.reservationCloseBtns = null;
   }
 
-  
+  async fetchReservationsData() {
+    const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB/reservations?item_id=${this.mealID}`;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        return [];
+      }
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      return [];
+    }
+  }
 
   async createReservationsModal(index) {
+    this.mealID = index;
     const getMealsDetails = new PullMealData();
-    const mealsDetails = await getMealsDetails.fetchMealsData(index);
+    const mealsDetails = await getMealsDetails.fetchMealsData(this.mealID);
     const reservationsSection = document.createElement('section');
     reservationsSection.className = 'reservationsSection';
     reservationsSection.innerHTML = `
@@ -22,63 +33,66 @@ export default class Reservations {
       <p class="close-icon"><span class="material-symbols-outlined">close</span></p>
       <div class="mealDescription">
         <img class="mealImage" src="${mealsDetails.meals[0].strMealThumb}" width="600" alt="simple">
-        <h2 class="mealTitle headings">${mealsDetails.meals[0].strMeal}</h2>
-        
-      </div>
-      <div class="sectionContainers">
+        <h2 class="mealTitle headings">${mealsDetails.meals[0].strMeal}</h2>      </div>
+      <di class="sectionContainers">
         <h2 class="reservationsHeading headings">Reservations(${this.reservationCount}):</h2>
         <div class="existingReservations"> </div>
+        <h2 class="addReservationsHeading headings">Reserve a Spot:</h2>
+        <form class="reservationForm">
+          <input class="formFields" type="text" placeholder="Username" id="username" name="username">
+          <input class="formFields" type="date" placeholder="Start Date" id="startDate" name="startDate">
+          <input class="formFields" type="date" placeholder="End Date" id="endDate" name="endDate">
+          <input class="submitBtn" type="submit" value="Reserve">
+        </form>
       </div>
-
-      
-
-
     </div>`;
-    this.body.appendChild(reservationsSection);
-    const reservationCloseBtns = document.querySelectorAll('.close-icon');
-    this.closeReservationModal(reservationCloseBtns);
+
+    document.body.appendChild(reservationsSection);
+    this.displayReservations();
+
+    const postReservationObject = new PostResevation();
+    this.reservationBtn = document.querySelector('.submitBtn');
+
+    this.reservationBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      const data = await postReservationObject.setupListener(this.mealID);
+      if (data) {
+        this.displayReservations();
+      }
+    });
+
+    this.reservationCloseBtns = document.querySelector('.close-icon');
+    this.closeReservationModal();
   }
 
-  closeReservationModal(reservationCloseBtns) {
-    this.reservationsSections = document.querySelectorAll(
-      '.meal-item-reservation-btn'
-    );
-    reservationCloseBtns.forEach((each) => {
-      each.addEventListener('click', () => {
-        this.reservationsSections.forEach((each) => {
-          each.style.display = 'none';
-        });
-      });
+  closeReservationModal() {
+    this.reservationCloseBtns.addEventListener('click', () => {
+      this.reservationCloseBtns.parentNode.parentNode.remove();
     });
   }
 
   updateCounter(fetchedReservationArr) {
-    // Updates counter
     this.reservationCount = fetchedReservationArr.length;
-    const reservationsHeading = document.querySelectorAll('.reservationsHeading');
+    const reservationsHeading = document.querySelectorAll(
+      '.reservationsHeading'
+    );
     reservationsHeading.forEach((each) => {
       each.textContent = `Reservations (${this.reservationCount}):`;
     });
   }
 
-  async displayReservations(mealId) {
+  async displayReservations() {
     const fetchReservations = await this.fetchReservationsData();
-    const existingReservations = document.querySelectorAll(
+    const existingReservations = document.querySelector(
       '.existingReservations'
     );
-
-    // Clear existing reservations
-    existingReservations.forEach((each) => {
-      each.innerHTML = '';
-    });
-    this.updateCounter(fetchedReservationArr);
-
-    fetchedReservationArr.forEach((each) => {
+    existingReservations.innerHTML = '';
+    this.updateCounter(fetchReservations);
+    fetchReservations.forEach((each) => {
       const reservation = document.createElement('p');
+      reservation.classList.add('reservation-list-item');
       reservation.textContent = `${each.date_start} - ${each.date_end} by ${each.username}`;
-      existingReservations.forEach((each) => {
-        each.appendChild(reservation);
-      });
+      existingReservations.appendChild(reservation);
     });
   }
 
