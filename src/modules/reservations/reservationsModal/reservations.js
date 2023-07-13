@@ -1,8 +1,31 @@
-import PullMealData from './pullMeal';
+import PullMealData from './pullMeal.js';
 
-import FetchReservations from './fetchReservations.js';export default class Reservations {  async createReservationsModal(index) {
+export default class Reservations {
+  constructor() {
+    this.reservationCount = 0;
+    this.mealID = null;
+    this.reservationCloseBtns = null;
+  }
+
+  async fetchReservationsData() {
+    const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB/reservations?item_id=${this.mealID}`;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        return [];
+      }
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      return [];
+    }
+  }
+
+  async createReservationsModal(index) {
+    this.mealID = index;
+
     const getMealsDetails = new PullMealData();
-    const mealsDetails = await getMealsDetails.fetchMealsData(index);
+    const mealsDetails = await getMealsDetails.fetchMealsData(this.mealID);
     const reservationsSection = document.createElement('section');
     reservationsSection.className = 'reservationsSection';
     reservationsSection.innerHTML = `
@@ -17,37 +40,43 @@ import FetchReservations from './fetchReservations.js';export default class Rese
       </div>
     </div>`;
     document.body.appendChild(reservationsSection);
-    const reservationCloseBtns = document.querySelector('.close-icon');
-    this.closeReservationModal(reservationCloseBtns);
-  }  closeReservationModal(reservationCloseBtns) {
-    reservationCloseBtns.addEventListener('click', () => {
-      reservationCloseBtns.parentNode.parentNode.remove();
+    this.displayReservations();
+    this.reservationCloseBtns = document.querySelector('.close-icon');
+    this.closeReservationModal();
+  }
+
+  closeReservationModal() {
+    this.reservationCloseBtns.addEventListener('click', () => {
+      this.reservationCloseBtns.parentNode.parentNode.remove();
     });
-  }  updateCounter(fetchedReservationArr) {
-    // Updates counter
+  }
+
+  updateCounter(fetchedReservationArr) {
     this.reservationCount = fetchedReservationArr.length;
     const reservationsHeading = document.querySelectorAll(
-      '.reservationsHeading'
+      '.reservationsHeading',
     );
     reservationsHeading.forEach((each) => {
       each.textContent = `Reservations (${this.reservationCount}):`;
     });
-  }  async displayReservations(mealId) {
+  }
+
+  async displayReservations() {
     const fetchReservations = await this.fetchReservationsData();
-    const existingReservations = document.querySelectorAll(
-      '.existingReservations'
-    );    // Clear existing reservations
-    existingReservations.forEach((each) => {
-      each.innerHTML = '';
-    });
-    this.updateCounter(fetchedReservationArr);    fetchedReservationArr.forEach((each) => {
+    const existingReservations = document.querySelector(
+      '.existingReservations',
+    );
+    existingReservations.innerHTML = '';
+    this.updateCounter(fetchReservations);
+    fetchReservations.forEach((each) => {
       const reservation = document.createElement('p');
+      reservation.classList.add('reservation-list-item');
       reservation.textContent = `${each.date_start} - ${each.date_end} by ${each.username}`;
-      existingReservations.forEach((each) => {
-        each.appendChild(reservation);
-      });
+      existingReservations.appendChild(reservation);
     });
-  }  showReservations(mealId) {
+  }
+
+  showReservations(mealId) {
     this.createReservationsModal(mealId);
   }
 }
