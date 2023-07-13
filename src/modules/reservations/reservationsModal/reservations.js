@@ -1,21 +1,16 @@
 import PullMealData from './pullMeal';
+import FetchReservations from './fetchReservations.js';
 
 export default class Reservations {
   constructor() {
     this.body = document.querySelector('body');
     this.showReservations();
+    this.fetchReservations = new FetchReservations();
+    this.reservationCount = 0;
+    this.showReservations();
   }
 
-  async fetchReservationsData() {
-    const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XTyHQABn3ej42SK28nbc/reservations?item_id=item${this.mealID}`;
-    try {
-      const response = await fetch(url);
-      const result = await response.json();
-      return result;
-    } catch (error) {
-      return [];
-    }
-  }
+  
 
   async createReservationsModal(index) {
     const getMealsDetails = new PullMealData();
@@ -28,8 +23,16 @@ export default class Reservations {
       <div class="mealDescription">
         <img class="mealImage" src="${mealsDetails.meals[0].strMealThumb}" width="600" alt="simple">
         <h2 class="mealTitle headings">${mealsDetails.meals[0].strMeal}</h2>
-        <div class="mealsDescription"> ${mealsDetails.meals[0].strInstructions}</div>
+        
       </div>
+      <div class="sectionContainers">
+        <h2 class="reservationsHeading headings">Reservations(${this.reservationCount}):</h2>
+        <div class="existingReservations"> </div>
+      </div>
+
+      
+
+
     </div>`;
     this.body.appendChild(reservationsSection);
     const reservationCloseBtns = document.querySelectorAll('.close-icon');
@@ -46,6 +49,15 @@ export default class Reservations {
           each.style.display = 'none';
         });
       });
+    });
+  }
+
+  updateCounter(fetchedReservationArr) {
+    // Updates counter
+    this.reservationCount = fetchedReservationArr.length;
+    const reservationsHeading = document.querySelectorAll('.reservationsHeading');
+    reservationsHeading.forEach((each) => {
+      each.textContent = `Reservations (${this.reservationCount}):`;
     });
   }
 
