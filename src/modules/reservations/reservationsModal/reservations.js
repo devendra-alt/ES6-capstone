@@ -1,4 +1,4 @@
-import PullMealData from './pullMeal';
+import PullMealData from './pullMeal.js';
 
 export default class Reservations {
   constructor() {
@@ -38,7 +38,7 @@ export default class Reservations {
 
   closeReservationModal(reservationCloseBtns) {
     this.reservationsSections = document.querySelectorAll(
-      '.meal-item-reservation-btn'
+      '.meal-item-reservation-btn',
     );
     reservationCloseBtns.forEach((each) => {
       each.addEventListener('click', () => {

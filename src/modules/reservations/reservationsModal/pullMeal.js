@@ -3,7 +3,7 @@ export default class PullMealsData {
     this.url = 'https://www.themealdb.com/api/json/v1/1/lookup.php?';
   }
   async fetchMealsData(id) {
-    console.log(id);
+    
     try {
       const response = await fetch(`${this.url}i=${id}`);
       if (!response.ok) {
