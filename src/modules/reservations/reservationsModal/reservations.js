@@ -49,26 +49,6 @@ export default class Reservations {
     });
   }
 
-  async displayReservations(mealId) {
-    const fetchReservations = await this.fetchReservationsData();
-    const existingReservations = document.querySelectorAll(
-      '.existingReservations'
-    );
-
-    // Clear existing reservations
-    existingReservations.forEach((each) => {
-      each.innerHTML = '';
-    });
-    this.updateCounter(fetchedReservationArr);
-
-    fetchedReservationArr.forEach((each) => {
-      const reservation = document.createElement('p');
-      reservation.textContent = `${each.date_start} - ${each.date_end} by ${each.username}`;
-      existingReservations.forEach((each) => {
-        each.appendChild(reservation);
-      });
-    });
-  }
 
   showReservations(mealId) {
     this.createReservationsModal(mealId);
