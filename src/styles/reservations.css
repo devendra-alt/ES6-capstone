@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border: 2px solid #5800ff;
+  border: 0.4rem solid #5800ff;
   padding: 3.8rem;
   width: 46rem;
   margin: auto;
@@ -29,6 +29,8 @@
 .close-icon {
   text-align: right;
   cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .movieImage {
@@ -37,9 +39,8 @@
 
 .headings {
   margin-bottom: 0.8rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1.9px solid #ffffff59;
-  color: #fff;
+  padding: 1.5rem 0;
+  font-size: 1.8rem;
 }
 
 .movieTitle {
