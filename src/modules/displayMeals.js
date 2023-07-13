@@ -13,6 +13,7 @@ async function displayMeals(reservation) {
     const likeCounter = document.createElement('p');
     const commentBtn = document.createElement('button');
     const reservationBtn = document.createElement('button');
+
     mealElement.setAttribute('data-mealID', meal.idMeal);
     imgEl.setAttribute('data-mealID', meal.idMeal);
     mealTitleEl.setAttribute('data-mealID', meal.idMeal);

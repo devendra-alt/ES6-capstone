@@ -8,5 +8,7 @@ import Involvement from './modules/Involvement.js';
 import Reservations from './modules/reservations/reservationsModal/reservations.js';
 
 const involvement = new Involvement();
-const reservation = new Reservations(); displayMeals(reservation); initCommentPopUp(involvement);
+const reservation = new Reservations();
+displayMeals(reservation);
+initCommentPopUp(involvement);
 initCreateComment(involvement);

@@ -5,7 +5,6 @@ export default class Reservations {
     this.reservationCount = 0;
     this.mealID = null;
     this.reservationCloseBtns = null;
-
   }
 
   async fetchReservationsData() {
