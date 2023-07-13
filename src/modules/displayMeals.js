@@ -1,8 +1,10 @@
 import fetchMealsFromApi from './meal_list.js';
 import likeImg from '../assets/heart.svg';
 import displayLikes from './displayLikes.js';
+import initializeLikeButtons from './addLikes.js';
 
-async function displayMeals() {
+async function displayMeals(test) {
+    console.log('test')
   const meals = await fetchMealsFromApi();
   const mainSection = document.querySelector('.section');
 
@@ -23,6 +25,9 @@ async function displayMeals() {
     likeCounter.setAttribute('data-mealID', meal.idMeal);
     commentBtn.setAttribute('data-mealID', meal.idMeal);
     reservationBtn.setAttribute('data-mealID', meal.idMeal);
+    likeBtn.addEventListener('click', () => {
+      initializeLikeButtons(meal.idMeal);
+    });
 
     imgEl.src = new URL(meal.strMealThumb);
     mealTitleEl.innerText = meal.strMeal;
@@ -37,7 +42,7 @@ async function displayMeals() {
     likeBtn.classList.add('meal-item-like-btn');
     commentBtn.classList.add('meal-item-comment-btn');
     reservationBtn.classList.add('meal-item-reservation-btn');
-
+    likeCounter.classList.add('meal-item-like-counter');
     mealElement.appendChild(imgEl);
     mealElement.appendChild(mealTitleEl);
     mealElement.appendChild(likeBtn);
