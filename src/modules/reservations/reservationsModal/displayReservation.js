@@ -1,6 +1,8 @@
 import fetchMealsFromApi from './meal_list.js';
 import likeImg from '../assets/heart.svg';
-import displayLikes from './displayLikes.js';async function displayMeals(reservation) {
+import displayLikes from './displayLikes.js';
+
+async function displayMeals(reservation) {
   const meals = await fetchMealsFromApi();
   const mainSection = document.querySelector('.section');  meals.forEach(async (meal) => {
     const mealElement = document.createElement('div');
