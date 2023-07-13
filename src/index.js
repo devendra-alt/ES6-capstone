@@ -11,7 +11,4 @@ const involvement = new Involvement();
 initCommentPopUp(involvement);
 initCreateComment(involvement);
 
-window.addEventListener('load', ()=> {
-    displayMeals('main');
-})
-
+displayMeals('main');
