@@ -2,7 +2,7 @@ import fetchMealsFromApi from './meal_list.js';
 import likeImg from '../assets/heart.svg';
 import displayLikes from './displayLikes.js';
 
-async function displayMeals() {
+async function displayMeals(reservation) {
   const meals = await fetchMealsFromApi();
   const mainSection = document.querySelector('.section');
 
@@ -23,6 +23,10 @@ async function displayMeals() {
     likeCounter.setAttribute('data-mealID', meal.idMeal);
     commentBtn.setAttribute('data-mealID', meal.idMeal);
     reservationBtn.setAttribute('data-mealID', meal.idMeal);
+
+    reservationBtn.addEventListener('click', () => {
+      reservation.showReservations(meal.idMeal);
+    });
 
     imgEl.src = new URL(meal.strMealThumb);
     mealTitleEl.innerText = meal.strMeal;
