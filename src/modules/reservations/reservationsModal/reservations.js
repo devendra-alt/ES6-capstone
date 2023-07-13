@@ -49,7 +49,6 @@ export default class Reservations {
     });
   }
 
-
   showReservations(mealId) {
     this.createReservationsModal(mealId);
   }
