@@ -5,6 +5,10 @@ import displayMeals from './modules/displayMeals.js';
 import initCommentPopUp from './modules/comments/initComments.js';
 import initCreateComment from './modules/comments/initCreateComment.js';
 import Involvement from './modules/Involvement.js';
-import Reservations from './modules/reservations/reservationsModal/reservations';const involvement = new Involvement();
-const reservation = new Reservations();displayMeals(reservation);initCommentPopUp(involvement);
+
+const involvement = new Involvement();
+
+initCommentPopUp(involvement);
 initCreateComment(involvement);
+
+displayMeals();

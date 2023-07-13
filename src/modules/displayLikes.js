@@ -14,7 +14,22 @@ const displayLikes = async (id) => {
       }
     });
     return result;
-  } catch (error) { throw new Error('error getting likes to display'); }
+  } catch (error) {
+    throw new Error('error getting likes to display');
+  }
 };
 
-export default displayLikes;
+const getLikes = async () => {
+  try {
+    const res = await fetch(`${involvementApiURL}/likes`);
+    if (!res.ok) {
+      throw new Error('error getting likes to display');
+    }
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    return [];
+  }
+};
+
+export { displayLikes, getLikes };
