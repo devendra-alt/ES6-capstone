@@ -1,3 +1,4 @@
+import PostResevation from './postReservation.js';
 import PullMealData from './pullMeal.js';
 
 export default class Reservations {
@@ -23,7 +24,6 @@ export default class Reservations {
 
   async createReservationsModal(index) {
     this.mealID = index;
-
     const getMealsDetails = new PullMealData();
     const mealsDetails = await getMealsDetails.fetchMealsData(this.mealID);
     const reservationsSection = document.createElement('section');
@@ -34,13 +34,32 @@ export default class Reservations {
       <div class="mealDescription">
         <img class="mealImage" src="${mealsDetails.meals[0].strMealThumb}" width="600" alt="simple">
         <h2 class="mealTitle headings">${mealsDetails.meals[0].strMeal}</h2>      </div>
-      <div class="sectionContainers">
+      <di class="sectionContainers">
         <h2 class="reservationsHeading headings">Reservations(${this.reservationCount}):</h2>
         <div class="existingReservations"> </div>
+        <h2 class="addReservationsHeading headings">Reserve a Spot:</h2>
+        <form class="reservationForm">
+          <input class="formFields" type="text" placeholder="Username" id="username" name="username">
+          <input class="formFields" type="date" placeholder="Start Date" id="startDate" name="startDate">
+          <input class="formFields" type="date" placeholder="End Date" id="endDate" name="endDate">
+          <input class="submitBtn" type="submit" value="Reserve">
+        </form>
       </div>
     </div>`;
+
     document.body.appendChild(reservationsSection);
     this.displayReservations();
+    const postReservationObject = new PostResevation();
+    this.reservationBtn = document.querySelector('.submitBtn');
+
+    this.reservationBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      const data = await postReservationObject.setupListener(this.mealID);
+      if (data) {
+        this.displayReservations();
+      }
+    });
+
     this.reservationCloseBtns = document.querySelector('.close-icon');
     this.closeReservationModal();
   }
