@@ -49,7 +49,6 @@ export default class Reservations {
 
     document.body.appendChild(reservationsSection);
     this.displayReservations();
-
     const postReservationObject = new PostResevation();
     this.reservationBtn = document.querySelector('.submitBtn');
 
@@ -74,7 +73,7 @@ export default class Reservations {
   updateCounter(fetchedReservationArr) {
     this.reservationCount = fetchedReservationArr.length;
     const reservationsHeading = document.querySelectorAll(
-      '.reservationsHeading'
+      '.reservationsHeading',
     );
     reservationsHeading.forEach((each) => {
       each.textContent = `Reservations (${this.reservationCount}):`;
@@ -84,7 +83,7 @@ export default class Reservations {
   async displayReservations() {
     const fetchReservations = await this.fetchReservationsData();
     const existingReservations = document.querySelector(
-      '.existingReservations'
+      '.existingReservations',
     );
     existingReservations.innerHTML = '';
     this.updateCounter(fetchReservations);
