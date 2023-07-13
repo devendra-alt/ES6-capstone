@@ -4,12 +4,13 @@ export default class PostResevation {
     this.username = document.querySelector('#username');
     this.startDate = document.querySelector('#startDate');
     this.endDate = document.querySelector('#endDate');
+    this.itemId = null;
   }
 
-  async postReservation(itemId, userName, dateStart, dateEnd) {
+  async postReservation(userName, dateStart, dateEnd) {
     try {
       const data = {
-        item_id: itemId,
+        item_id: this.itemId,
         username: userName,
         date_start: dateStart,
         date_end: dateEnd,
@@ -23,22 +24,22 @@ export default class PostResevation {
           headers: {
             'Content-type': 'application/json',
           },
-        }
+        },
       );
       return response;
-    } catch (error) {}
+    } catch (error) { return null; }
   }
 
   async setupListener(id) {
-    const itemId = id;
+    this.itemid = id;
     const username = this.username.value;
     const dateStart = this.startDate.value;
     const dateEnd = this.endDate.value;
     const result = await this.postReservation(
-      itemId,
+
       username,
       dateStart,
-      dateEnd
+      dateEnd,
     );
     return result;
   }
