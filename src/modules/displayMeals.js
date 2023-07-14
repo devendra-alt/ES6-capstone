@@ -44,7 +44,7 @@ async function displayMeals(reservation) {
     commentBtn.classList.add('meal-item-comment-btn', 'meal-card-input');
     reservationBtn.classList.add(
       'meal-item-reservation-btn',
-      'meal-card-input'
+      'meal-card-input',
     );
     likeCounter.classList.add('meal-item-like-counter');
     mealElement.appendChild(imgEl);
