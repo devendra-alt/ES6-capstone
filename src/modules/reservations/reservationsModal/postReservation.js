@@ -11,27 +11,26 @@ export default class PostResevation {
     this.itemId = null;
   }
 
-  async postReservation(userName, dateStart, dateEnd) {
+  async postReservation(itemId, userName, dateStart, dateEnd) {
     try {
       const data = {
-        item_id: this.itemId,
+        item_id: itemId,
         username: userName,
         date_start: dateStart,
         date_end: dateEnd,
       };
 
-      const response = await fetch(
-        'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB/reservations',
-        {
-          method: 'POST',
-          body: JSON.stringify(data),
-          headers: {
-            'Content-type': 'application/json',
-          },
+      const response = await fetch(this.#API_URL, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-type': 'application/json',
         },
-      );
+      });
       return response;
-    } catch (error) { return null; }
+    } catch (error) {
+      return {};
+    }
   }
 
   async setupListener(id) {
