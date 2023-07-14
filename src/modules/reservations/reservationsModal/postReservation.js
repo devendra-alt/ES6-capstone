@@ -35,16 +35,18 @@ export default class PostResevation {
   }
 
   async setupListener(id) {
-    this.itemid = id;
+    const itemId = id;
     const username = this.username.value;
     const dateStart = this.startDate.value;
     const dateEnd = this.endDate.value;
-    const result = await this.postReservation(
 
+    const result = await this.postReservation(
+      itemId,
       username,
       dateStart,
       dateEnd,
     );
+
     return result;
   }
 }
