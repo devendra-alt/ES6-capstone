@@ -1,12 +1,11 @@
 <a name="readme-top"></a>
 
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[your\_project\_name\] ](#-your_project_name-)
+- [📖 ES6-Capstone ](#-your_project_name-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -27,37 +26,20 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 ES6-CAPSTONE <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-
-**ES6-capstone** is a website where users can find meals, comment and make a reservsation.
+**ES6-capstone** is a website where users can find meals, fetched from mealDB, comment and make a reservsation.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://reactjs.org/">HTML5</a></li>
+    <li><a href="https://reactjs.org/">CSS3</a></li>
+    <li><a href="https://reactjs.org/">ES6 JAVASCRIPT</a></li>
   </ul>
 </details>
 
@@ -65,26 +47,25 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+- **HTML Form**
+- **css flexbox**
+- **Semantic tags**
+- **ES6 Javascript**
+- **ES6 modules**
+- **webpack**
+- **Async**
+- **JEST test library**
+- **Fetch API**
 
-- **[HTML Form]**
-- **[css flexbox]**
-- **[Semantic tags]**
-- **[Javascript]**
-- **[ES6 modules]**
-- **[webpack]**
-- **[Async]**
--  **[test]**
-  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+- <a href="https://drive.google.com/file/d/1t9-XzrCp2FGIjTmG1yhZNTTIq4nHGetE/view?usp=sharing">Video Link</a>
 
-- [Live Demo Link](Coming Soon!)
+- Live Demo Link (Coming Soon!)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,13 +73,15 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
+
+- Web browser
+- Node
+- VS code
 
 <!--
 Example command:
@@ -112,72 +95,48 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
 ```
---->
+  cd my-folder
+  git clone https://github.com/devendra-alt/ES6-capstone
+```
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd my-project
-  gem install
+  cd ES6-capstone
+  npm i
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
-```sh
-  rails server
 ```
---->
+  npm run dev
+```
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
-  bin/rails test test/models/article_test.rb
+  npm test
 ```
---->
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+- Github pages
+- Netlify
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
 
 👤 **Devendra Mulewa**
 
@@ -189,7 +148,7 @@ Example:
 
 - GitHub: [@githubhandle](https://github.com/maths29)
 - Twitter: [@twitterhandle](https://twitter.com/maths29)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/iwu-john-b92b01148/ )
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/iwu-john-b92b01148/)
 
 👤 **Bleu Yves Sopoude (MrBlue)**
 
@@ -197,15 +156,13 @@ Example:
 - Linkedin: [@in/bleu-yves](https://www.linkedin.com/in/bleu-yves/)
 - GitHub: [@bleuYves](https://twitter.com/bleuYves)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
+- [ ] **[Adding-meals]**
 - [ ] **[Sign-up]**
 - [ ] **[Login]**
 
@@ -225,10 +182,7 @@ Feel free to check the [issues page](https://github.com/devendra-alt/ES6-capston
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project please start it
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -236,21 +190,14 @@ If you like this project please start it
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
 We would like to thank Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
