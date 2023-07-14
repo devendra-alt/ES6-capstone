@@ -41,25 +41,25 @@ For more information on the importance of a professional README for your reposit
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[your\_project\_name\] ](#-your_project_name-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -67,7 +67,8 @@ For more information on the importance of a professional README for your reposit
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+
+**ES6-capstone** is a website where users can find meals, comment and make a reservsation.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -102,10 +103,15 @@ For more information on the importance of a professional README for your reposit
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
+- **[HTML Form]**
+- **[css flexbox]**
+- **[Semantic tags]**
+- **[Javascript]**
+- **[ES6 modules]**
+- **[webpack]**
+- **[Async]**
+-  **[test]**
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -208,17 +214,25 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Devendra Mulewa**
 
-👤 **Author2**
+- GitHub: [@githubhandle](https://github.com/devendra-alt)
+- Twitter: [@twitterhandle](https://twitter.com/Devendra5101)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/devendramulewa)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Iwu John Chinonso**
+
+- GitHub: [@githubhandle](https://github.com/maths29)
+- Twitter: [@twitterhandle](https://twitter.com/maths29)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/iwu-john-b92b01148/ )
+
+👤 **Bleu Yves Sopoude (MrBlue)**
+
+- GitHub: [@Bleu-Yves-Sopoude](https://github.com/Bleu-Yves-Sopoude)
+- Linkedin: [@in/bleu-yves](https://www.linkedin.com/in/bleu-yves/)
+- GitHub: [@bleuYves](https://twitter.com/bleuYves)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,9 +242,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Sign-up]**
+- [ ] **[Login]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,7 +253,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/devendra-alt/ES6-capstone/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,7 +263,8 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project please start it
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -260,25 +274,12 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+We would like to thank Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
