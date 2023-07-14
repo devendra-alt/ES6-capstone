@@ -2,11 +2,11 @@
  * @jest-environment jsdom
  */
 
-import commentCounter from '../src/modules/comments/commentCounter';
+import commentCounter from '../src/modules/comments/commentCounter.js';
 
-const dom = `<ul></ul>`;
+const dom = '<ul></ul>';
 
-const mock_comment_data = [
+const mockCommentData = [
   {
     comment: 'This is nice!',
     creation_date: '2021-01-10',
@@ -24,7 +24,7 @@ document.body.innerHTML = dom;
 const commentDetailsList = document.querySelector('ul');
 
 describe('should count number of element in comment ', () => {
-  mock_comment_data.forEach((element) => {
+  mockCommentData.forEach((element) => {
     const listItem = document.createElement('p');
     listItem.classList.add('popup-comments-item');
     listItem.innerText = `${element.creation_date} ${element.username} : ${element.comment}`;
