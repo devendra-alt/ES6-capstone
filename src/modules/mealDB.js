@@ -13,10 +13,15 @@ class MealDb {
       const res = await fetch(`${this.#URL}${this.#LOOKUP}${id}`, {
         method: 'GET',
       });
+
+      if (!res.ok) {
+        throw new Error('failed to get meal details');
+      }
+
       const data = await res.json();
       return data.meals[0];
     } catch (error) {
-      throw new Error(error);
+      return {};
     }
   }
 }
