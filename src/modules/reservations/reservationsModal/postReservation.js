@@ -8,8 +8,7 @@ export default class PostResevation {
     this.username = document.querySelector('#username');
     this.startDate = document.querySelector('#startDate');
     this.endDate = document.querySelector('#endDate');
-    this.itemId = null;
-  }
+  
 
   async postReservation(itemId, userName, dateStart, dateEnd) {
     try {
