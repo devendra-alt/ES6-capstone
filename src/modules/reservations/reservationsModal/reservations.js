@@ -55,7 +55,7 @@ export default class Reservations {
 
     this.reservationBtn.addEventListener('click', async (e) => {
       e.preventDefault();
-      const data = await postReservationObject.setupListener(this.mealID);
+      await postReservationObject.setupListener(this.mealID);
       this.displayReservations();
     });
 
