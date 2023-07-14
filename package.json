@@ -7,7 +7,8 @@
     "build": "webpack",
     "dev": "webpack serve",
     "lint": "hint . && npx stylelint \"**/*.{css,scss}\" && eslint .",
-    "stylelint": "npx stylelint \"**/*.{css,scss}\" --fix"
+    "stylelint": "npx stylelint \"**/*.{css,scss}\" --fix",
+    "test": "jest --coverage --watchAll"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.22.5",
