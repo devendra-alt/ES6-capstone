@@ -1,5 +1,9 @@
 export default class PostResevation {
+  #API_URL;
+
   constructor() {
+    this.form = document.querySelector('.reservationForm');
+    this.#API_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB/reservations';
     this.reservationBtn = document.querySelector('.submitBtn');
     this.username = document.querySelector('#username');
     this.startDate = document.querySelector('#startDate');
