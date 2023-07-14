@@ -3,12 +3,13 @@ export default class PostResevation {
 
   constructor() {
     this.form = document.querySelector('.reservationForm');
-    this.#API_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB/reservations';
+    this.#API_URL =
+      'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB/reservations';
     this.reservationBtn = document.querySelector('.submitBtn');
     this.username = document.querySelector('#username');
     this.startDate = document.querySelector('#startDate');
     this.endDate = document.querySelector('#endDate');
-  
+  }
 
   async postReservation(itemId, userName, dateStart, dateEnd) {
     try {
@@ -42,7 +43,7 @@ export default class PostResevation {
       itemId,
       username,
       dateStart,
-      dateEnd,
+      dateEnd
     );
 
     return result;
