@@ -2,6 +2,7 @@ import fetchMealsFromApi from './meal_list.js';
 import likeImg from '../assets/heart.svg';
 import { displayLikes } from './displayLikes.js';
 import initializeLikeButtons from './addLikes.js';
+import mealCounter from './mealCounter.js';
 
 async function displayMeals(reservation) {
   const meals = await fetchMealsFromApi();
@@ -59,6 +60,7 @@ async function displayMeals(reservation) {
     mealElement.appendChild(commentBtn);
     mealElement.appendChild(reservationBtn);
     mainSection.appendChild(mealElement);
+    mealCounter();
   });
 }
 export default displayMeals;
