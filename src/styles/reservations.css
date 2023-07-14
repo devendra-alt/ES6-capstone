@@ -76,7 +76,9 @@
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.5rem;
-  color: #5800ff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
   box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);
 }
 
