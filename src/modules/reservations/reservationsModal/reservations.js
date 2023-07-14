@@ -1,5 +1,6 @@
 import PostResevation from './postReservation.js';
 import PullMealData from './pullMeal.js';
+import reservationCounter from './reservationCounter.js';
 
 export default class Reservations {
   constructor() {
@@ -36,7 +37,7 @@ export default class Reservations {
         <h2 class="mealTitle headings">${mealsDetails.meals[0].strMeal}</h2>      </div>
       <di class="sectionContainers">
         <h2 class="reservationsHeading headings">Reservations(${this.reservationCount}):</h2>
-        <div class="existingReservations"> </div>
+        <div class="existingReservations"></div>
         <h2 class="addReservationsHeading headings">Reserve a Spot:</h2>
         <form class="reservationForm">
           <input class="formFields" type="text" placeholder="Username" id="username" name="username">
@@ -54,10 +55,8 @@ export default class Reservations {
 
     this.reservationBtn.addEventListener('click', async (e) => {
       e.preventDefault();
-      const data = await postReservationObject.setupListener(this.mealID);
-      if (data) {
-        this.displayReservations();
-      }
+      await postReservationObject.setupListener(this.mealID);
+      this.displayReservations();
     });
 
     this.reservationCloseBtns = document.querySelector('.close-icon');
@@ -70,8 +69,8 @@ export default class Reservations {
     });
   }
 
-  updateCounter(fetchedReservationArr) {
-    this.reservationCount = fetchedReservationArr.length;
+  updateCounter(existingReservations) {
+    this.reservationCount = reservationCounter(existingReservations);
     const reservationsHeading = document.querySelectorAll(
       '.reservationsHeading',
     );
@@ -86,13 +85,13 @@ export default class Reservations {
       '.existingReservations',
     );
     existingReservations.innerHTML = '';
-    this.updateCounter(fetchReservations);
     fetchReservations.forEach((each) => {
       const reservation = document.createElement('p');
       reservation.classList.add('reservation-list-item');
       reservation.textContent = `${each.date_start} - ${each.date_end} by ${each.username}`;
       existingReservations.appendChild(reservation);
     });
+    this.updateCounter(existingReservations);
   }
 
   showReservations(mealId) {

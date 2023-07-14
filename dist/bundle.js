@@ -2,6 +2,147 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/reservations.css":
+/*!***************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/reservations.css ***!
+  \***************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap);"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.reservationsSection {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 5rem 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.reservationsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 0.4rem solid #000;
+  padding: 3.8rem;
+  width: 46rem;
+  margin: auto;
+  color: rgb(46, 46, 46);
+  font-size: 0.8rem;
+}
+
+.close-icon {
+  text-align: right;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.movieImage {
+  margin-bottom: 2rem;
+}
+
+.headings {
+  margin-bottom: 0.8rem;
+  padding: 1.5rem 0;
+  font-size: 1.8rem;
+}
+
+.movieTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5800ff;
+}
+
+.sectionContainers {
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.formFields {
+  display: block;
+  width: 80%;
+  height: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border: 1.4px solid rgba(35, 31, 32, 0.124);
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.formFields:focus {
+  border: none;
+  outline: none;
+}
+
+.submitBtn {
+  display: flex;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #5800ff;
+  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);
+}
+
+.reservation-list-item {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.star-reservation {
+  display: block;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.giveReservationText {
+  padding-bottom: 0.6rem;
+}
+
+.star-reservation input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url('https://dl.dropboxusercontent.com/s/1oh3h6o20k4285x/star-empty.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);
+}
+
+.star-reservation input:checked + label {
+  background-image: url('https://dl.dropboxusercontent.com/s/oij2qr7r2ulfi4i/star-filled.png');
+}
+`, "",{"version":3,"sources":["webpack://./src/styles/reservations.css"],"names":[],"mappings":"AAEA;EACE,aAAa;EACb,eAAe;EACf,MAAM;EACN,QAAQ;EACR,OAAO;EACP,SAAS;EACT,kBAAkB;EAClB,yCAAyC;EACzC,2BAA2B;EAC3B,eAAe;EACf,qCAAqC;AACvC;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,sBAAsB;EACtB,yBAAyB;EACzB,eAAe;EACf,YAAY;EACZ,YAAY;EACZ,sBAAsB;EACtB,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,qBAAqB;EACrB,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,gBAAgB;AAClB;;AAEA;EACE,cAAc;EACd,UAAU;EACV,YAAY;EACZ,mBAAmB;EACnB,mBAAmB;EACnB,2CAA2C;EAC3C,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,oBAAoB;EACpB,YAAY;EACZ,qBAAqB;EACrB,cAAc;EACd,6CAA6C;AAC/C;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,cAAc;EACd,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,qBAAqB;EACrB,WAAW;EACX,YAAY;EACZ,2FAA2F;EAC3F,wBAAwB;EACxB,4BAA4B;EAC5B,2BAA2B;EAC3B,eAAe;EACf,6CAA6C;AAC/C;;AAEA;EACE,4FAA4F;AAC9F","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');\n\n.reservationsSection {\n  display: flex;\n  position: fixed;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n  overflow-y: scroll;\n  background-color: rgb(255, 255, 255, 0.1);\n  backdrop-filter: blur(10px);\n  padding: 5rem 0;\n  font-family: 'Montserrat', sans-serif;\n}\n\n.reservationsContainer {\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 0.4rem solid #000;\n  padding: 3.8rem;\n  width: 46rem;\n  margin: auto;\n  color: rgb(46, 46, 46);\n  font-size: 0.8rem;\n}\n\n.close-icon {\n  text-align: right;\n  cursor: pointer;\n  font-size: 1.5rem;\n  font-weight: 500;\n}\n\n.movieImage {\n  margin-bottom: 2rem;\n}\n\n.headings {\n  margin-bottom: 0.8rem;\n  padding: 1.5rem 0;\n  font-size: 1.8rem;\n}\n\n.movieTitle {\n  font-size: 2rem;\n  font-weight: 700;\n  color: #5800ff;\n}\n\n.sectionContainers {\n  padding: 1rem;\n  margin-top: 3rem;\n}\n\n.formFields {\n  display: block;\n  width: 80%;\n  height: 3rem;\n  border-radius: 1rem;\n  margin-bottom: 1rem;\n  border: 1.4px solid rgba(35, 31, 32, 0.124);\n  padding-left: 1rem;\n  font-size: 1rem;\n}\n\n.formFields:focus {\n  border: none;\n  outline: none;\n}\n\n.submitBtn {\n  display: flex;\n  background-color: #fff;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 0.5rem;\n  color: #5800ff;\n  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);\n}\n\n.reservation-list-item {\n  font-size: 1.4rem;\n  font-weight: 500;\n}\n\n.star-reservation {\n  display: block;\n  margin-bottom: 2rem;\n  padding-left: 1rem;\n}\n\n.giveReservationText {\n  padding-bottom: 0.6rem;\n}\n\n.star-reservation input {\n  display: none;\n}\n\nlabel {\n  display: inline-block;\n  width: 25px;\n  height: 25px;\n  background-image: url('https://dl.dropboxusercontent.com/s/1oh3h6o20k4285x/star-empty.png');\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  cursor: pointer;\n  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.3);\n}\n\n.star-reservation input:checked + label {\n  background-image: url('https://dl.dropboxusercontent.com/s/oij2qr7r2ulfi4i/star-filled.png');\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/reset.css":
 /*!********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/reset.css ***!
@@ -98,7 +239,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/reset.css"],"names":[],"mappings":"AAAA,gDAAgD;;AAIhD,qBAAqB;AACrB;;;EAGE,sBAAsB;EACtB,2BAA2B;AAC7B;;AAEA,cAAc;;AAEd;EACE,eAAe;AACjB;;AAEA,kCAAkC;AAClC;EACE,UAAU;EACV,SAAS;AACX;AACA,2GAA2G;AAC3G;;EAEE,gBAAgB;AAClB;;AAEA,2BAA2B;AAC3B;EACE,uBAAuB;AACzB;;AAEA,2BAA2B;AAC3B;EACE,iBAAiB;EACjB,6BAA6B;EAC7B,gBAAgB;EAChB,gCAAgC;EAChC,kBAAkB;AACpB;;AAEA,0DAA0D;AAC1D;EACE,8BAA8B;AAChC;;AAEA,oCAAoC;AACpC;;EAEE,eAAe;EACf,cAAc;AAChB;;AAEA,yCAAyC;AACzC;;;;EAIE,aAAa;AACf;;AAEA,gGAAgG;AAChG;EACE;IACE,qBAAqB;EACvB;;EAEA;;;IAGE,qCAAqC;IACrC,uCAAuC;IACvC,sCAAsC;IACtC,gCAAgC;EAClC;AACF","sourcesContent":["/* https://piccalil.li/blog/a-modern-css-reset */\r\n\r\n@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');\r\n\r\n/* Box sizing rules */\r\n*,\r\n*::before,\r\n*::after {\r\n  box-sizing: border-box;\r\n  /* border: 1px solid red; */\r\n}\r\n\r\n/* font size */\r\n\r\nhtml {\r\n  font-size: 10px;\r\n}\r\n\r\n/* Remove default margin padding */\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\r\nul,\r\nol {\r\n  list-style: none;\r\n}\r\n\r\n/* Set core root defaults */\r\nhtml:focus-within {\r\n  scroll-behavior: smooth;\r\n}\r\n\r\n/* Set core body defaults */\r\nbody {\r\n  min-height: 100vh;\r\n  text-rendering: optimizeSpeed;\r\n  line-height: 1.5;\r\n  font-family: 'Inter', sans-serif;\r\n  position: relative;\r\n}\r\n\r\n/* A elements that don't have a class get default styles */\r\na:not([class]) {\r\n  text-decoration-skip-ink: auto;\r\n}\r\n\r\n/* Make images easier to work with */\r\nimg,\r\npicture {\r\n  max-width: 100%;\r\n  display: block;\r\n}\r\n\r\n/* Inherit fonts for inputs and buttons */\r\ninput,\r\nbutton,\r\ntextarea,\r\nselect {\r\n  font: inherit;\r\n}\r\n\r\n/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */\r\n@media (prefers-reduced-motion: reduce) {\r\n  html:focus-within {\r\n    scroll-behavior: auto;\r\n  }\r\n\r\n  *,\r\n  *::before,\r\n  *::after {\r\n    animation-duration: 0.01ms !important;\r\n    animation-iteration-count: 1 !important;\r\n    transition-duration: 0.01ms !important;\r\n    scroll-behavior: auto !important;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles/reset.css"],"names":[],"mappings":"AAAA,gDAAgD;;AAIhD,qBAAqB;AACrB;;;EAGE,sBAAsB;EACtB,2BAA2B;AAC7B;;AAEA,cAAc;;AAEd;EACE,eAAe;AACjB;;AAEA,kCAAkC;AAClC;EACE,UAAU;EACV,SAAS;AACX;AACA,2GAA2G;AAC3G;;EAEE,gBAAgB;AAClB;;AAEA,2BAA2B;AAC3B;EACE,uBAAuB;AACzB;;AAEA,2BAA2B;AAC3B;EACE,iBAAiB;EACjB,6BAA6B;EAC7B,gBAAgB;EAChB,gCAAgC;EAChC,kBAAkB;AACpB;;AAEA,0DAA0D;AAC1D;EACE,8BAA8B;AAChC;;AAEA,oCAAoC;AACpC;;EAEE,eAAe;EACf,cAAc;AAChB;;AAEA,yCAAyC;AACzC;;;;EAIE,aAAa;AACf;;AAEA,gGAAgG;AAChG;EACE;IACE,qBAAqB;EACvB;;EAEA;;;IAGE,qCAAqC;IACrC,uCAAuC;IACvC,sCAAsC;IACtC,gCAAgC;EAClC;AACF","sourcesContent":["/* https://piccalil.li/blog/a-modern-css-reset */\n\n@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');\n\n/* Box sizing rules */\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  /* border: 1px solid red; */\n}\n\n/* font size */\n\nhtml {\n  font-size: 10px;\n}\n\n/* Remove default margin padding */\n* {\n  padding: 0;\n  margin: 0;\n}\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\nul,\nol {\n  list-style: none;\n}\n\n/* Set core root defaults */\nhtml:focus-within {\n  scroll-behavior: smooth;\n}\n\n/* Set core body defaults */\nbody {\n  min-height: 100vh;\n  text-rendering: optimizeSpeed;\n  line-height: 1.5;\n  font-family: 'Inter', sans-serif;\n  position: relative;\n}\n\n/* A elements that don't have a class get default styles */\na:not([class]) {\n  text-decoration-skip-ink: auto;\n}\n\n/* Make images easier to work with */\nimg,\npicture {\n  max-width: 100%;\n  display: block;\n}\n\n/* Inherit fonts for inputs and buttons */\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\n\n/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */\n@media (prefers-reduced-motion: reduce) {\n  html:focus-within {\n    scroll-behavior: auto;\n  }\n\n  *,\n  *::before,\n  *::after {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -150,11 +291,6 @@ header {
   font-weight: 500;
 }
 
-svg {
-  width: 20px;
-  height: 15px;
-}
-
 footer {
   border-top: 0.3rem solid #000;
   height: 5rem;
@@ -169,30 +305,6 @@ footer {
   font-weight: 500;
 }
 
-.nav_link img {
-  width: 70px;
-  height: 50px;
-  border-radius: 45%;
-  margin: 10px;
-}
-
-#imgg img {
-  width: 110px;
-  height: 95px;
-}
-
-.interactive-btns {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav_link ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  margin-left: 700px;
-}
-
 .section {
   width: 80%;
   margin: 0 auto;
@@ -202,21 +314,15 @@ footer {
   padding-bottom: 18rem;
 }
 
-.body_sec {
-  display: flex;
-}
-
-.body_sec2 {
-  display: flex;
-  margin-top: 70px;
-  justify-content: center;
-}
-
 .meal-item {
   display: flex;
   flex-direction: column;
-  width: 18rem;
+  width: 21rem;
   gap: 1.2rem;
+  box-shadow:
+    rgba(17, 17, 26, 0.1) 0 1px 0,
+    rgba(17, 17, 26, 0.1) 0 8px 24px,
+    rgba(17, 17, 26, 0.1) 0 16px 48px;
 }
 
 .meal-item-img {
@@ -225,111 +331,135 @@ footer {
 
 .meal-item-title {
   font-size: 1.4rem;
+  margin-left: 1.2rem;
 }
 
 .meal-item-like-btn {
   width: 2.4rem;
+  float: left;
+  margin-left: 1.2rem;
+}
 
-  /* comment popup */
+.meal-item-like-counter {
+  float: left;
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 1.2rem;
+}
 
+.meal-card-input {
+  border: 0.2rem solid #000;
+  padding: 0.3rem 0.6rem;
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0.2rem;
+}
+
+.meal-card-input:last-child {
+  margin-bottom: 0;
+}
+
+/* comment popup */
+
+.comment-popup {
+  top: 0;
+  bottom: 0;
+  left: 2rem;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  display: block;
+  width: 90%;
+  height: min-content;
+  position: absolute;
+  border: 0.5rem solid #000;
+  text-align: center;
+}
+
+.comment-popup-img {
+  margin: 3.2rem auto;
+  clear: both;
+  width: 30rem;
+  height: 24rem;
+}
+
+.comment-popup-title {
+  text-align: center;
+}
+
+.comment-popup-exit-btn {
+  width: 4.2rem;
+  height: 4.2rem;
+  float: right;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.comment-popup-meal-details-list {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.popup-comment-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.popup-comments-item {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* comment popup form */
+
+.popup-comment-submit-form {
+  width: 60%;
+  padding: 2.5rem;
+  margin: 0 auto;
+}
+
+.comment-input {
+  margin-top: 3rem;
+  display: block;
+  margin-bottom: 2rem;
+  border: 0.3rem solid #000;
+  padding: 0.7rem;
+}
+
+.popup-comment-submit-form-insights {
+  height: 5em;
+}
+
+.popup-comment-submit-form-comment-btn {
+  display: block;
+  padding: 0.8rem 1.2rem;
+  margin-left: 0;
+  border: 0.3rem solid #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+@media (min-width: 764px) {
   .comment-popup {
-    top: 0;
-    bottom: 0;
-    left: 2rem;
-    right: 0;
-    z-index: 100;
-    background-color: #fff;
-    display: block;
-    width: 90%;
-    height: min-content;
-    position: absolute;
-    border: 0.5rem solid #000;
-    text-align: center;
+    left: 20rem;
+    width: 70%;
   }
 
   .comment-popup-img {
-    margin: 3.2rem auto;
-    clear: both;
-    width: 30rem;
-    height: 24rem;
-  }
-
-  .comment-popup-title {
-    text-align: center;
+    width: 40rem;
+    height: 30rem;
   }
 
   .comment-popup-exit-btn {
-    width: 4.2rem;
-    height: 4.2rem;
-    float: right;
-    margin-top: 2rem;
-    margin-right: 2rem;
-  }
-
-  .comment-popup-meal-details-list {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  .popup-comment-section {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .popup-comments-item {
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
-  /* comment popup form */
-
-  .popup-comment-submit-form {
-    width: 60%;
-    padding: 2.5rem;
-    margin: 0 auto;
-  }
-
-  .comment-input {
-    margin-top: 3rem;
-    display: block;
-    margin-bottom: 2rem;
-    border: 0.3rem solid #000;
-    padding: 0.7rem;
-  }
-
-  .popup-comment-submit-form-insights {
-    height: 5em;
-  }
-
-  .popup-comment-submit-form-comment-btn {
-    display: block;
-    padding: 0.8rem 1.2rem;
-    margin-left: 0;
-    border: 0.3rem solid #000;
-    font-size: 1.2rem;
-    font-weight: 500;
-    background-color: #fff;
-  }
-
-  @media (min-width: 764px) {
-    .comment-popup {
-      left: 20rem;
-      width: 70%;
-    }
-
-    .comment-popup-img {
-      width: 40rem;
-      height: 30rem;
-    }
-
-    .comment-popup-exit-btn {
-      margin-top: 4rem;
-      margin-right: 5rem;
-    }
+    margin-top: 4rem;
+    margin-right: 5rem;
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,SAAS;EACT,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,eAAe;EACf,WAAW;EACX,qBAAqB;AACvB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;;EAEb,kBAAkB;;EAElB;IACE,MAAM;IACN,SAAS;IACT,UAAU;IACV,QAAQ;IACR,YAAY;IACZ,sBAAsB;IACtB,cAAc;IACd,UAAU;IACV,mBAAmB;IACnB,kBAAkB;IAClB,yBAAyB;IACzB,kBAAkB;EACpB;;EAEA;IACE,mBAAmB;IACnB,WAAW;IACX,YAAY;IACZ,aAAa;EACf;;EAEA;IACE,kBAAkB;EACpB;;EAEA;IACE,aAAa;IACb,cAAc;IACd,YAAY;IACZ,gBAAgB;IAChB,kBAAkB;EACpB;;EAEA;IACE,iBAAiB;IACjB,gBAAgB;IAChB,kBAAkB;EACpB;;EAEA;IACE,mBAAmB;IACnB,sBAAsB;EACxB;;EAEA;IACE,iBAAiB;IACjB,gBAAgB;EAClB;;EAEA,uBAAuB;;EAEvB;IACE,UAAU;IACV,eAAe;IACf,cAAc;EAChB;;EAEA;IACE,gBAAgB;IAChB,cAAc;IACd,mBAAmB;IACnB,yBAAyB;IACzB,eAAe;EACjB;;EAEA;IACE,WAAW;EACb;;EAEA;IACE,cAAc;IACd,sBAAsB;IACtB,cAAc;IACd,yBAAyB;IACzB,iBAAiB;IACjB,gBAAgB;IAChB,sBAAsB;EACxB;;EAEA;IACE;MACE,WAAW;MACX,UAAU;IACZ;;IAEA;MACE,YAAY;MACZ,aAAa;IACf;;IAEA;MACE,gBAAgB;MAChB,kBAAkB;IACpB;EACF;AACF","sourcesContent":[".logo {\r\n  width: 10rem;\r\n  height: 10rem;\r\n}\r\n\r\nheader {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  align-items: center;\r\n  font-size: 1.4rem;\r\n  gap: 5rem;\r\n}\r\n\r\n.nav-links {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 2.4rem;\r\n}\r\n\r\n.nav-link {\r\n  color: #000;\r\n  text-decoration: none;\r\n  font-weight: 500;\r\n}\r\n\r\nsvg {\r\n  width: 20px;\r\n  height: 15px;\r\n}\r\n\r\nfooter {\r\n  border-top: 0.3rem solid #000;\r\n  height: 5rem;\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.footer-text {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  padding-top: 1rem;\r\n  color: #000;\r\n  font-weight: 500;\r\n}\r\n\r\n.nav_link img {\r\n  width: 70px;\r\n  height: 50px;\r\n  border-radius: 45%;\r\n  margin: 10px;\r\n}\r\n\r\n#imgg img {\r\n  width: 110px;\r\n  height: 95px;\r\n}\r\n\r\n.interactive-btns {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.nav_link ul {\r\n  display: flex;\r\n  list-style: none;\r\n  gap: 20px;\r\n  margin-left: 700px;\r\n}\r\n\r\n.section {\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  gap: 2.4rem;\r\n  padding-bottom: 18rem;\r\n}\r\n\r\n.body_sec {\r\n  display: flex;\r\n}\r\n\r\n.body_sec2 {\r\n  display: flex;\r\n  margin-top: 70px;\r\n  justify-content: center;\r\n}\r\n\r\n.meal-item {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 18rem;\r\n  gap: 1.2rem;\r\n}\r\n\r\n.meal-item-img {\r\n  width: 100%;\r\n}\r\n\r\n.meal-item-title {\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.meal-item-like-btn {\r\n  width: 2.4rem;\r\n\r\n  /* comment popup */\r\n\r\n  .comment-popup {\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 2rem;\r\n    right: 0;\r\n    z-index: 100;\r\n    background-color: #fff;\r\n    display: block;\r\n    width: 90%;\r\n    height: min-content;\r\n    position: absolute;\r\n    border: 0.5rem solid #000;\r\n    text-align: center;\r\n  }\r\n\r\n  .comment-popup-img {\r\n    margin: 3.2rem auto;\r\n    clear: both;\r\n    width: 30rem;\r\n    height: 24rem;\r\n  }\r\n\r\n  .comment-popup-title {\r\n    text-align: center;\r\n  }\r\n\r\n  .comment-popup-exit-btn {\r\n    width: 4.2rem;\r\n    height: 4.2rem;\r\n    float: right;\r\n    margin-top: 2rem;\r\n    margin-right: 2rem;\r\n  }\r\n\r\n  .comment-popup-meal-details-list {\r\n    font-size: 1.5rem;\r\n    font-weight: 400;\r\n    text-align: center;\r\n  }\r\n\r\n  .popup-comment-section {\r\n    padding-top: 2.5rem;\r\n    padding-bottom: 2.5rem;\r\n  }\r\n\r\n  .popup-comments-item {\r\n    font-size: 1.3rem;\r\n    font-weight: 500;\r\n  }\r\n\r\n  /* comment popup form */\r\n\r\n  .popup-comment-submit-form {\r\n    width: 60%;\r\n    padding: 2.5rem;\r\n    margin: 0 auto;\r\n  }\r\n\r\n  .comment-input {\r\n    margin-top: 3rem;\r\n    display: block;\r\n    margin-bottom: 2rem;\r\n    border: 0.3rem solid #000;\r\n    padding: 0.7rem;\r\n  }\r\n\r\n  .popup-comment-submit-form-insights {\r\n    height: 5em;\r\n  }\r\n\r\n  .popup-comment-submit-form-comment-btn {\r\n    display: block;\r\n    padding: 0.8rem 1.2rem;\r\n    margin-left: 0;\r\n    border: 0.3rem solid #000;\r\n    font-size: 1.2rem;\r\n    font-weight: 500;\r\n    background-color: #fff;\r\n  }\r\n\r\n  @media (min-width: 764px) {\r\n    .comment-popup {\r\n      left: 20rem;\r\n      width: 70%;\r\n    }\r\n\r\n    .comment-popup-img {\r\n      width: 40rem;\r\n      height: 30rem;\r\n    }\r\n\r\n    .comment-popup-exit-btn {\r\n      margin-top: 4rem;\r\n      margin-right: 5rem;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,6BAA6B;EAC7B,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,iBAAiB;EACjB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,UAAU;EACV,cAAc;EACd,aAAa;EACb,eAAe;EACf,WAAW;EACX,qBAAqB;AACvB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,WAAW;EACX;;;qCAGmC;AACrC;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,WAAW;EACX,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,eAAe;EACf,iBAAiB;EACjB,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,yBAAyB;EACzB,sBAAsB;EACtB,sBAAsB;EACtB,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;AAClB;;AAEA,kBAAkB;;AAElB;EACE,MAAM;EACN,SAAS;EACT,UAAU;EACV,QAAQ;EACR,YAAY;EACZ,sBAAsB;EACtB,cAAc;EACd,UAAU;EACV,mBAAmB;EACnB,kBAAkB;EAClB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA,uBAAuB;;AAEvB;EACE,UAAU;EACV,eAAe;EACf,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,cAAc;EACd,mBAAmB;EACnB,yBAAyB;EACzB,eAAe;AACjB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,cAAc;EACd,sBAAsB;EACtB,cAAc;EACd,yBAAyB;EACzB,iBAAiB;EACjB,gBAAgB;EAChB,sBAAsB;AACxB;;AAEA;EACE;IACE,WAAW;IACX,UAAU;EACZ;;EAEA;IACE,YAAY;IACZ,aAAa;EACf;;EAEA;IACE,gBAAgB;IAChB,kBAAkB;EACpB;AACF","sourcesContent":[".logo {\n  width: 10rem;\n  height: 10rem;\n}\n\nheader {\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  font-size: 1.4rem;\n  gap: 5rem;\n}\n\n.nav-links {\n  display: flex;\n  flex-direction: row;\n  gap: 2.4rem;\n}\n\n.nav-link {\n  color: #000;\n  text-decoration: none;\n  font-weight: 500;\n}\n\nfooter {\n  border-top: 0.3rem solid #000;\n  height: 5rem;\n  font-size: 1.4rem;\n}\n\n.footer-text {\n  width: 80%;\n  margin: 0 auto;\n  padding-top: 1rem;\n  color: #000;\n  font-weight: 500;\n}\n\n.section {\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  flex-wrap: wrap;\n  gap: 2.4rem;\n  padding-bottom: 18rem;\n}\n\n.meal-item {\n  display: flex;\n  flex-direction: column;\n  width: 21rem;\n  gap: 1.2rem;\n  box-shadow:\n    rgba(17, 17, 26, 0.1) 0 1px 0,\n    rgba(17, 17, 26, 0.1) 0 8px 24px,\n    rgba(17, 17, 26, 0.1) 0 16px 48px;\n}\n\n.meal-item-img {\n  width: 100%;\n}\n\n.meal-item-title {\n  font-size: 1.4rem;\n  margin-left: 1.2rem;\n}\n\n.meal-item-like-btn {\n  width: 2.4rem;\n  float: left;\n  margin-left: 1.2rem;\n}\n\n.meal-item-like-counter {\n  float: left;\n  display: inline;\n  font-size: 1.2rem;\n  font-weight: 500;\n  margin-left: 1.2rem;\n}\n\n.meal-card-input {\n  border: 0.2rem solid #000;\n  padding: 0.3rem 0.6rem;\n  background-color: #fff;\n  font-size: 1.1rem;\n  font-weight: 500;\n  margin: 0 0.2rem;\n}\n\n.meal-card-input:last-child {\n  margin-bottom: 0;\n}\n\n/* comment popup */\n\n.comment-popup {\n  top: 0;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: block;\n  width: 90%;\n  height: min-content;\n  position: absolute;\n  border: 0.5rem solid #000;\n  text-align: center;\n}\n\n.comment-popup-img {\n  margin: 3.2rem auto;\n  clear: both;\n  width: 30rem;\n  height: 24rem;\n}\n\n.comment-popup-title {\n  text-align: center;\n}\n\n.comment-popup-exit-btn {\n  width: 4.2rem;\n  height: 4.2rem;\n  float: right;\n  margin-top: 2rem;\n  margin-right: 2rem;\n}\n\n.comment-popup-meal-details-list {\n  font-size: 1.5rem;\n  font-weight: 400;\n  text-align: center;\n}\n\n.popup-comment-section {\n  padding-top: 2.5rem;\n  padding-bottom: 2.5rem;\n}\n\n.popup-comments-item {\n  font-size: 1.3rem;\n  font-weight: 500;\n}\n\n/* comment popup form */\n\n.popup-comment-submit-form {\n  width: 60%;\n  padding: 2.5rem;\n  margin: 0 auto;\n}\n\n.comment-input {\n  margin-top: 3rem;\n  display: block;\n  margin-bottom: 2rem;\n  border: 0.3rem solid #000;\n  padding: 0.7rem;\n}\n\n.popup-comment-submit-form-insights {\n  height: 5em;\n}\n\n.popup-comment-submit-form-comment-btn {\n  display: block;\n  padding: 0.8rem 1.2rem;\n  margin-left: 0;\n  border: 0.3rem solid #000;\n  font-size: 1.2rem;\n  font-weight: 500;\n  background-color: #fff;\n}\n\n@media (min-width: 764px) {\n  .comment-popup {\n    left: 20rem;\n    width: 70%;\n  }\n\n  .comment-popup-img {\n    width: 40rem;\n    height: 30rem;\n  }\n\n  .comment-popup-exit-btn {\n    margin-top: 4rem;\n    margin-right: 5rem;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -452,6 +582,60 @@ module.exports = function (item) {
   }
   return [content].join("\n");
 };
+
+/***/ }),
+
+/***/ "./src/styles/reservations.css":
+/*!*************************************!*\
+  !*** ./src/styles/reservations.css ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_reservations_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./reservations.css */ "./node_modules/css-loader/dist/cjs.js!./src/styles/reservations.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_reservations_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_reservations_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_reservations_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_reservations_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
 
 /***/ }),
 
@@ -855,10 +1039,10 @@ class Involvement {
   async getComments(mealId) {
     try {
       const res = await fetch(`${this.#BASE_URL}comments?item_id=${mealId}`);
-      const data = await res.json();
       if (!res.ok) {
         throw new Error('errror in retriving comments!');
       }
+      const data = await res.json();
       return data;
     } catch (error) {
       return [];
@@ -902,6 +1086,79 @@ class Involvement {
 
 /***/ }),
 
+/***/ "./src/modules/addLikes.js":
+/*!*********************************!*\
+  !*** ./src/modules/addLikes.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _displayLikes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./displayLikes.js */ "./src/modules/displayLikes.js");
+
+
+const recordLike = async (mealId) => {
+  const response = await fetch(
+    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB/likes',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ item_id: mealId }),
+    },
+  );
+
+  if (!response.ok) {
+    throw new Error(`HTTP Response Status: ${response.status}`);
+  }
+
+  //   const result = await response.json();
+  return true;
+};
+const initializeLikeButtons = async (mealId) => {
+  await recordLike(mealId);
+  const updatedLikes = await (0,_displayLikes_js__WEBPACK_IMPORTED_MODULE_0__.getLikes)();
+  const likeCounterList = document.querySelectorAll('.meal-item-like-counter');
+  updatedLikes.forEach((updateObject) => {
+    likeCounterList.forEach((counterEl) => {
+      if (updateObject.item_id === counterEl.dataset.mealid) {
+        counterEl.innerHTML = `${updateObject.likes} likes`;
+        const heart = document.querySelector(
+          `.meal-item-like-btn[data-mealid="${mealId}"]`,
+        );
+        heart.src = new URL('https://img.icons8.com/tiny-color/24/like.png');
+      }
+    });
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initializeLikeButtons);
+
+
+/***/ }),
+
+/***/ "./src/modules/comments/commentCounter.js":
+/*!************************************************!*\
+  !*** ./src/modules/comments/commentCounter.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const commentCounter = (commentDetailsList) => {
+  const commentsList = commentDetailsList.childNodes;
+  return commentsList.length;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentCounter);
+
+
+/***/ }),
+
 /***/ "./src/modules/comments/commentListExtracter.js":
 /*!******************************************************!*\
   !*** ./src/modules/comments/commentListExtracter.js ***!
@@ -912,6 +1169,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _commentCounter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commentCounter.js */ "./src/modules/comments/commentCounter.js");
+
+
 const commentListExtracter = async (mealId, involvement) => {
   const commentSectionTitle = document.createElement('h1');
   const commentDetailsList = document.createElement('ul');
@@ -922,14 +1182,15 @@ const commentListExtracter = async (mealId, involvement) => {
 
   const commentsData = await involvement.getComments(mealId);
 
-  commentSectionTitle.innerText = `Comments(${commentsData.length})`;
-
   commentsData.forEach((element) => {
     const listItem = document.createElement('p');
     listItem.classList.add('popup-comments-item');
     listItem.innerText = `${element.creation_date} ${element.username} : ${element.comment}`;
     commentDetailsList.appendChild(listItem);
   });
+  commentSectionTitle.innerText = `Comments(${(0,_commentCounter_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+    commentDetailsList,
+  )})`;
   return [commentSectionTitle, commentDetailsList];
 };
 
@@ -1106,12 +1367,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const initCommentPopUp = (id, involvement) => {
+const initCommentPopUp = (involvement) => {
   const mealContainer = document.querySelector('.section');
   mealContainer.addEventListener('click', async (e) => {
-    if (e.target.classList.contains('comment-btn')) {
+    if (e.target.classList.contains('meal-item-comment-btn')) {
       const mealDb = new _mealDB_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
-      const meal = await mealDb.lookUpMeal(id);
+      const meal = await mealDb.lookUpMeal(e.target.dataset.mealid);
       (0,_comments_js__WEBPACK_IMPORTED_MODULE_1__["default"])(meal, involvement);
     }
   });
@@ -1173,6 +1434,56 @@ const initCreateComment = (involvement) => {
 
 /***/ }),
 
+/***/ "./src/modules/displayLikes.js":
+/*!*************************************!*\
+  !*** ./src/modules/displayLikes.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   displayLikes: () => (/* binding */ displayLikes),
+/* harmony export */   getLikes: () => (/* binding */ getLikes)
+/* harmony export */ });
+const involvementApiURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB';
+
+const displayLikes = async (id) => {
+  try {
+    const res = await fetch(`${involvementApiURL}/likes`);
+    if (!res.ok) {
+      throw new Error('error getting likes to display');
+    }
+    const data = await res.json();
+    let result = 0;
+    await data.forEach((element) => {
+      if (element.item_id === id) {
+        result = element.likes;
+      }
+    });
+    return result;
+  } catch (error) {
+    throw new Error('error getting likes to display');
+  }
+};
+
+const getLikes = async () => {
+  try {
+    const res = await fetch(`${involvementApiURL}/likes`);
+    if (!res.ok) {
+      throw new Error('error getting likes to display');
+    }
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    return [];
+  }
+};
+
+
+
+
+/***/ }),
+
 /***/ "./src/modules/displayMeals.js":
 /*!*************************************!*\
   !*** ./src/modules/displayMeals.js ***!
@@ -1185,20 +1496,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _meal_list_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./meal_list.js */ "./src/modules/meal_list.js");
 /* harmony import */ var _assets_heart_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/heart.svg */ "./src/assets/heart.svg");
+/* harmony import */ var _displayLikes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displayLikes.js */ "./src/modules/displayLikes.js");
+/* harmony import */ var _addLikes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./addLikes.js */ "./src/modules/addLikes.js");
 
 
 
-async function displayMeals() {
+
+
+async function displayMeals(reservation) {
   const meals = await (0,_meal_list_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
   const mainSection = document.querySelector('.section');
-
-  meals.forEach((meal) => {
+  mainSection.innerHTML = '';
+  meals.forEach(async (meal) => {
     const mealElement = document.createElement('div');
     const imgEl = document.createElement('img');
     const mealTitleEl = document.createElement('h1');
     const likeBtn = document.createElement('img');
     const likeCounter = document.createElement('p');
-
     const commentBtn = document.createElement('button');
     const reservationBtn = document.createElement('button');
 
@@ -1208,32 +1522,45 @@ async function displayMeals() {
     likeBtn.setAttribute('data-mealID', meal.idMeal);
     likeCounter.setAttribute('data-mealID', meal.idMeal);
     commentBtn.setAttribute('data-mealID', meal.idMeal);
+
     reservationBtn.setAttribute('data-mealID', meal.idMeal);
+    likeBtn.addEventListener('click', () => {
+      (0,_addLikes_js__WEBPACK_IMPORTED_MODULE_3__["default"])(meal.idMeal);
+    });
 
     imgEl.src = new URL(meal.strMealThumb);
     mealTitleEl.innerText = meal.strMeal;
     likeBtn.src = _assets_heart_svg__WEBPACK_IMPORTED_MODULE_1__;
     commentBtn.innerText = 'Comments';
     reservationBtn.innerText = 'Reservations';
-
+    const likesItems = await (0,_displayLikes_js__WEBPACK_IMPORTED_MODULE_2__.displayLikes)(meal.idMeal);
+    likeCounter.innerText = `${likesItems} likes`;
     mealElement.classList.add('meal-item');
     imgEl.classList.add('meal-item-img');
     mealTitleEl.classList.add('meal-item-title');
     likeBtn.classList.add('meal-item-like-btn');
+
+    commentBtn.classList.add('meal-item-comment-btn', 'meal-card-input');
+    reservationBtn.classList.add(
+      'meal-item-reservation-btn',
+      'meal-card-input',
+    );
+    likeCounter.classList.add('meal-item-like-counter');
+    mealElement.appendChild(imgEl);
     commentBtn.classList.add('meal-item-comment-btn');
     reservationBtn.classList.add('meal-item-reservation-btn');
-
+    reservationBtn.addEventListener('click', () => {
+      reservation.createReservationsModal(meal.idMeal);
+    });
     mealElement.appendChild(imgEl);
     mealElement.appendChild(mealTitleEl);
     mealElement.appendChild(likeBtn);
     mealElement.appendChild(likeCounter);
     mealElement.appendChild(commentBtn);
     mealElement.appendChild(reservationBtn);
-
     mainSection.appendChild(mealElement);
   });
 }
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayMeals);
 
 
@@ -1303,6 +1630,235 @@ async function fetchMealsFromApi() {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchMealsFromApi);
+
+
+/***/ }),
+
+/***/ "./src/modules/reservations/reservationsModal/postReservation.js":
+/*!***********************************************************************!*\
+  !*** ./src/modules/reservations/reservationsModal/postReservation.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PostResevation)
+/* harmony export */ });
+class PostResevation {
+  constructor() {
+    this.reservationBtn = document.querySelector('.submitBtn');
+    this.username = document.querySelector('#username');
+    this.startDate = document.querySelector('#startDate');
+    this.endDate = document.querySelector('#endDate');
+    this.itemId = null;
+  }
+
+  async postReservation(userName, dateStart, dateEnd) {
+    try {
+      const data = {
+        item_id: this.itemId,
+        username: userName,
+        date_start: dateStart,
+        date_end: dateEnd,
+      };
+
+      const response = await fetch(
+        'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB/reservations',
+        {
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: {
+            'Content-type': 'application/json',
+          },
+        },
+      );
+      return response;
+    } catch (error) { return null; }
+  }
+
+  async setupListener(id) {
+    this.itemid = id;
+    const username = this.username.value;
+    const dateStart = this.startDate.value;
+    const dateEnd = this.endDate.value;
+    const result = await this.postReservation(
+
+      username,
+      dateStart,
+      dateEnd,
+    );
+    return result;
+  }
+}
+
+
+/***/ }),
+
+/***/ "./src/modules/reservations/reservationsModal/pullMeal.js":
+/*!****************************************************************!*\
+  !*** ./src/modules/reservations/reservationsModal/pullMeal.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PullMealData)
+/* harmony export */ });
+class PullMealData {
+  constructor() {
+    this.url = 'https://www.themealdb.com/api/json/v1/1/lookup.php?';
+  }
+
+  async fetchMealsData(id) {
+    try {
+      const response = await fetch(`${this.url}i=${id}`);
+      if (!response.ok) {
+        throw new Error('Error in fetching data');
+      }
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      return [];
+    }
+  }
+}
+
+
+/***/ }),
+
+/***/ "./src/modules/reservations/reservationsModal/reservationCounter.js":
+/*!**************************************************************************!*\
+  !*** ./src/modules/reservations/reservationsModal/reservationCounter.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const reservationCounter = (reservationListEl) => {
+  const childNodes = reservationListEl.childNodes;
+  return childNodes.length;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (reservationCounter);
+
+
+/***/ }),
+
+/***/ "./src/modules/reservations/reservationsModal/reservations.js":
+/*!********************************************************************!*\
+  !*** ./src/modules/reservations/reservationsModal/reservations.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Reservations)
+/* harmony export */ });
+/* harmony import */ var _postReservation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./postReservation.js */ "./src/modules/reservations/reservationsModal/postReservation.js");
+/* harmony import */ var _pullMeal_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pullMeal.js */ "./src/modules/reservations/reservationsModal/pullMeal.js");
+/* harmony import */ var _reservationCounter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./reservationCounter.js */ "./src/modules/reservations/reservationsModal/reservationCounter.js");
+
+
+
+
+class Reservations {
+  constructor() {
+    this.reservationCount = 0;
+    this.mealID = null;
+    this.reservationCloseBtns = null;
+  }
+
+  async fetchReservationsData() {
+    const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/EI6t8oJ571YKMWTnlNDB/reservations?item_id=${this.mealID}`;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        return [];
+      }
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      return [];
+    }
+  }
+
+  async createReservationsModal(index) {
+    this.mealID = index;
+    const getMealsDetails = new _pullMeal_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+    const mealsDetails = await getMealsDetails.fetchMealsData(this.mealID);
+    const reservationsSection = document.createElement('section');
+    reservationsSection.className = 'reservationsSection';
+    reservationsSection.innerHTML = `
+    <div class="reservationsContainer">
+      <p class="close-icon"><span class="material-symbols-outlined">close</span></p>
+      <div class="mealDescription">
+        <img class="mealImage" src="${mealsDetails.meals[0].strMealThumb}" width="600" alt="simple">
+        <h2 class="mealTitle headings">${mealsDetails.meals[0].strMeal}</h2>      </div>
+      <di class="sectionContainers">
+        <h2 class="reservationsHeading headings">Reservations(${this.reservationCount}):</h2>
+        <div class="existingReservations"></div>
+        <h2 class="addReservationsHeading headings">Reserve a Spot:</h2>
+        <form class="reservationForm">
+          <input class="formFields" type="text" placeholder="Username" id="username" name="username">
+          <input class="formFields" type="date" placeholder="Start Date" id="startDate" name="startDate">
+          <input class="formFields" type="date" placeholder="End Date" id="endDate" name="endDate">
+          <input class="submitBtn" type="submit" value="Reserve">
+        </form>
+      </div>
+    </div>`;
+
+    document.body.appendChild(reservationsSection);
+    this.displayReservations();
+    const postReservationObject = new _postReservation_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
+    this.reservationBtn = document.querySelector('.submitBtn');
+
+    this.reservationBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      const data = await postReservationObject.setupListener(this.mealID);
+      this.displayReservations();
+    });
+
+    this.reservationCloseBtns = document.querySelector('.close-icon');
+    this.closeReservationModal();
+  }
+
+  closeReservationModal() {
+    this.reservationCloseBtns.addEventListener('click', () => {
+      this.reservationCloseBtns.parentNode.parentNode.remove();
+    });
+  }
+
+  updateCounter(existingReservations) {
+    this.reservationCount = (0,_reservationCounter_js__WEBPACK_IMPORTED_MODULE_2__["default"])(existingReservations);
+    const reservationsHeading = document.querySelectorAll(
+      '.reservationsHeading'
+    );
+    reservationsHeading.forEach((each) => {
+      each.textContent = `Reservations (${this.reservationCount}):`;
+    });
+  }
+
+  async displayReservations() {
+    const fetchReservations = await this.fetchReservationsData();
+    const existingReservations = document.querySelector(
+      '.existingReservations'
+    );
+    existingReservations.innerHTML = '';
+    fetchReservations.forEach((each) => {
+      const reservation = document.createElement('p');
+      reservation.classList.add('reservation-list-item');
+      reservation.textContent = `${each.date_start} - ${each.date_end} by ${each.username}`;
+      existingReservations.appendChild(reservation);
+    });
+    this.updateCounter(existingReservations);
+  }
+
+  showReservations(mealId) {
+    this.createReservationsModal(mealId);
+  }
+}
 
 
 /***/ }),
@@ -1454,25 +2010,27 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/reset.css */ "./src/styles/reset.css");
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
-/* harmony import */ var _assets_meal_logo_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/meal_logo.jpg */ "./src/assets/meal_logo.jpg");
-/* harmony import */ var _modules_displayMeals_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/displayMeals.js */ "./src/modules/displayMeals.js");
-/* harmony import */ var _modules_comments_initComments_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/comments/initComments.js */ "./src/modules/comments/initComments.js");
-/* harmony import */ var _modules_comments_initCreateComment_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/comments/initCreateComment.js */ "./src/modules/comments/initCreateComment.js");
-/* harmony import */ var _modules_Involvement_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/Involvement.js */ "./src/modules/Involvement.js");
+/* harmony import */ var _styles_reservations_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/reservations.css */ "./src/styles/reservations.css");
+/* harmony import */ var _assets_meal_logo_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/meal_logo.jpg */ "./src/assets/meal_logo.jpg");
+/* harmony import */ var _modules_displayMeals_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/displayMeals.js */ "./src/modules/displayMeals.js");
+/* harmony import */ var _modules_comments_initComments_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/comments/initComments.js */ "./src/modules/comments/initComments.js");
+/* harmony import */ var _modules_comments_initCreateComment_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/comments/initCreateComment.js */ "./src/modules/comments/initCreateComment.js");
+/* harmony import */ var _modules_Involvement_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/Involvement.js */ "./src/modules/Involvement.js");
+/* harmony import */ var _modules_reservations_reservationsModal_reservations_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/reservations/reservationsModal/reservations.js */ "./src/modules/reservations/reservationsModal/reservations.js");
+
+
+ 
 
 
 
 
 
 
-
-
-const involvement = new _modules_Involvement_js__WEBPACK_IMPORTED_MODULE_6__["default"]();
-
-(0,_modules_comments_initComments_js__WEBPACK_IMPORTED_MODULE_4__["default"])('52774', involvement);
-(0,_modules_comments_initCreateComment_js__WEBPACK_IMPORTED_MODULE_5__["default"])(involvement);
-
-(0,_modules_displayMeals_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
+const involvement = new _modules_Involvement_js__WEBPACK_IMPORTED_MODULE_7__["default"]();
+const reservation = new _modules_reservations_reservationsModal_reservations_js__WEBPACK_IMPORTED_MODULE_8__["default"]();
+(0,_modules_displayMeals_js__WEBPACK_IMPORTED_MODULE_4__["default"])(reservation);
+(0,_modules_comments_initComments_js__WEBPACK_IMPORTED_MODULE_5__["default"])(involvement);
+(0,_modules_comments_initCreateComment_js__WEBPACK_IMPORTED_MODULE_6__["default"])(involvement);
 
 })();
 
