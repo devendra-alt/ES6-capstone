@@ -16,7 +16,6 @@ const recordLike = async (mealId) => {
     throw new Error(`HTTP Response Status: ${response.status}`);
   }
 
-  
   return true;
 };
 const initializeLikeButtons = async (mealId) => {
