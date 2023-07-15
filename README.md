@@ -1,7 +1,5 @@
 <a name="readme-top"></a>
 
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
@@ -24,8 +22,6 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-<!-- PROJECT DESCRIPTION -->
-
 # 📖 ES6-CAPSTONE <a name="about-project"></a>
 
 **ES6-capstone** is a website where users can find meals, fetched from mealDB, comment and make a reservsation.
@@ -43,8 +39,6 @@
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
 - **HTML Form**
@@ -59,8 +53,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - <a href="https://drive.google.com/file/d/1t9-XzrCp2FGIjTmG1yhZNTTIq4nHGetE/view?usp=sharing">Video Link</a>
@@ -68,8 +60,6 @@
 - Live Demo Link (Coming Soon!)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -82,14 +72,6 @@ In order to run this project you need:
 - Web browser
 - Node
 - VS code
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
@@ -134,8 +116,6 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
-
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Devendra Mulewa**
@@ -158,8 +138,6 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Adding-meals]**
@@ -167,8 +145,6 @@ You can deploy this project using:
 - [ ] **[Login]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -178,23 +154,17 @@ Feel free to check the [issues page](https://github.com/devendra-alt/ES6-capston
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project please start it
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 We would like to thank Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
