@@ -15,25 +15,25 @@ const initCreateComment = (involvement) => {
       const res = await involvement.setComment(
         e.target.dataset.mealid,
         formProps.userName,
-        formProps.insightEl
+        formProps.insightEl,
       );
 
       const userNameEl = document.querySelector(
-        '.popup-comment-submit-form-user-name'
+        '.popup-comment-submit-form-user-name',
       );
 
       userNameEl.value = '';
       const UserInsightsEl = document.querySelector(
-        '.popup-comment-submit-form-insights'
+        '.popup-comment-submit-form-insights',
       );
       UserInsightsEl.value = '';
       if (res.success) {
         const commentSectionEl = document.querySelector(
-          '.popup-comment-section'
+          '.popup-comment-section',
         );
         const commentListData = await commentListExtracter(
           e.target.dataset.mealid,
-          involvement
+          involvement,
         );
         commentSectionEl.innerHTML = '';
         commentSectionEl.appendChild(commentListData[0]);
