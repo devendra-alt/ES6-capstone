@@ -38,6 +38,26 @@ footer {
   font-weight: 500;
 }
 
+.footer-text > a:link,
+a:visited {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-text > a:hover,
+a:active {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ff8000;
+}
+
+.footer-text > span {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
 .section {
   width: 80%;
   margin: 0 auto;
