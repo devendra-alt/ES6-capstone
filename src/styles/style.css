@@ -38,15 +38,15 @@ footer {
   font-weight: 500;
 }
 
-.footer-text > a:link,
-a:visited {
+.footer-text > a:visited,
+.footer-text > a:link {
   font-weight: 700;
   text-decoration: none;
   color: #000;
 }
 
-.footer-text > a:hover,
-a:active {
+.footer-text > a:active,
+.footer-text > a:hover {
   font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
@@ -72,7 +72,9 @@ a:active {
   flex-direction: column;
   width: 21rem;
   gap: 1.2rem;
-  box-shadow: rgba(17, 17, 26, 0.1) 0 1px 0, rgba(17, 17, 26, 0.1) 0 8px 24px,
+  box-shadow:
+    rgba(17, 17, 26, 0.1) 0 1px 0,
+    rgba(17, 17, 26, 0.1) 0 8px 24px,
     rgba(17, 17, 26, 0.1) 0 16px 48px;
 }
 
@@ -204,7 +206,7 @@ a:active {
 
 @media (min-width: 764px) {
   .comment-popup {
-    margin: 3 auto;
+    margin: 3rem auto;
     width: 60%;
   }
 
