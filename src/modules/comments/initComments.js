@@ -1,0 +1,16 @@
+import MealDb from '../mealDB.js';
+import renderCommentPopUp from './comments.js';
+
+const initCommentPopUp = (involvement) => {
+  const mealContainer = document.querySelector('.section');
+  mealContainer.addEventListener('click', async (e) => {
+    if (e.target.classList.contains('meal-item-comment-btn')) {
+      document.body.classList.add('comment-popup-blur-effect');
+      const mealDb = new MealDb();
+      const meal = await mealDb.lookUpMeal(e.target.dataset.mealid);
+      renderCommentPopUp(meal, involvement);
+    }
+  });
+};
+
+export default initCommentPopUp;
