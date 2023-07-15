@@ -39,6 +39,7 @@ const createMealDetailsListEl = (meal) => {
   return mealDetailsList;
 };
 const renderCommentPopUp = async (meal, involvement) => {
+  const articleDiv = document.createElement('article');
   const popUpEl = document.createElement('div');
   const mealImage = document.createElement('img');
   const mealTitle = document.createElement('h1');
@@ -48,7 +49,8 @@ const renderCommentPopUp = async (meal, involvement) => {
   exitBtnEl.src = exit;
 
   exitBtnEl.addEventListener('click', async (e) => {
-    e.target.parentNode.remove();
+    e.target.parentNode.parentNode.remove();
+    document.body.classList.remove('popup-class');
   });
 
   mealTitle.innerText = meal.strMeal;
@@ -57,6 +59,7 @@ const renderCommentPopUp = async (meal, involvement) => {
   mealImage.setAttribute('data-mealID', meal.idMeal);
   mealTitle.setAttribute('data-mealID', meal.idMeal);
 
+  articleDiv.classList.add('comment-popup-wrapper');
   popUpEl.classList.add('comment-popup');
   mealImage.classList.add('comment-popup-img');
   mealTitle.classList.add('comment-popup-title');
