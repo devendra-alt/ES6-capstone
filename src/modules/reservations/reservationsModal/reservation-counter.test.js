@@ -1,11 +1,17 @@
-import reservationCounter from './reservationCounter';
+import reservationCounter from './reservationCounter.js';
 
 // Mocking a sample reservation list element for testing
 const mockReservationListEl = {
   childNodes: [
-    { /* sample child node */ },
-    { /* sample child node */ },
-    { /* sample child node */ },
+    {
+      /* sample child node */
+    },
+    {
+      /* sample child node */
+    },
+    {
+      /* sample child node */
+    },
   ],
 };
 

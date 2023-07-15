@@ -38,6 +38,26 @@ footer {
   font-weight: 500;
 }
 
+.footer-text > a:visited,
+.footer-text > a:link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-text > a:active,
+.footer-text > a:hover {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ff8000;
+}
+
+.footer-text > span {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
 .section {
   width: 80%;
   margin: 0 auto;
@@ -71,6 +91,7 @@ footer {
   width: 2.4rem;
   float: left;
   margin-left: 1.2rem;
+  cursor: pointer;
 }
 
 .meal-item-like-counter {
@@ -88,6 +109,7 @@ footer {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0 0.2rem;
+  cursor: pointer;
 }
 
 .meal-card-input:last-child {
@@ -96,18 +118,21 @@ footer {
 
 /* comment popup */
 
-.comment-popup {
+.comment-popup-wrapper {
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: fixed;
   top: 0;
-  bottom: 0;
-  left: 2rem;
   right: 0;
-  z-index: 100;
-  background-color: #fff;
-  display: block;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.comment-popup {
   width: 90%;
-  height: min-content;
-  position: absolute;
-  border: 0.5rem solid #000;
+  margin: 3.5rem auto;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -118,16 +143,13 @@ footer {
   height: 24rem;
 }
 
-.comment-popup-title {
-  text-align: center;
-}
-
 .comment-popup-exit-btn {
   width: 4.2rem;
   height: 4.2rem;
   float: right;
   margin-top: 2rem;
   margin-right: 2rem;
+  cursor: pointer;
 }
 
 .comment-popup-meal-details-list {
@@ -146,12 +168,17 @@ footer {
   font-weight: 500;
 }
 
+.popup-class {
+  overflow: hidden;
+}
+
 /* comment popup form */
 
 .popup-comment-submit-form {
-  width: 60%;
+  width: 50%;
   padding: 2.5rem;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .comment-input {
@@ -167,6 +194,7 @@ footer {
 }
 
 .popup-comment-submit-form-comment-btn {
+  cursor: pointer;
   display: block;
   padding: 0.8rem 1.2rem;
   margin-left: 0;
@@ -178,8 +206,8 @@ footer {
 
 @media (min-width: 764px) {
   .comment-popup {
-    left: 20rem;
-    width: 70%;
+    margin: 3rem auto;
+    width: 60%;
   }
 
   .comment-popup-img {

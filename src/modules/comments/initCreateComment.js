@@ -17,6 +17,16 @@ const initCreateComment = (involvement) => {
         formProps.userName,
         formProps.insightEl,
       );
+
+      const userNameEl = document.querySelector(
+        '.popup-comment-submit-form-user-name',
+      );
+
+      userNameEl.value = '';
+      const UserInsightsEl = document.querySelector(
+        '.popup-comment-submit-form-insights',
+      );
+      UserInsightsEl.value = '';
       if (res.success) {
         const commentSectionEl = document.querySelector(
           '.popup-comment-section',

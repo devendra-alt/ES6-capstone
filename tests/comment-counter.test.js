@@ -3,28 +3,16 @@
  */
 
 import commentCounter from '../src/modules/comments/commentCounter.js';
+import comments from '../__mocks__/mock.js';
 
 const dom = '<ul></ul>';
-
-const mockCommentData = [
-  {
-    comment: 'This is nice!',
-    creation_date: '2021-01-10',
-    username: 'John',
-  },
-  {
-    comment: 'Great content!',
-    creation_date: '2021-02-10',
-    username: 'Jane',
-  },
-];
 
 document.body.innerHTML = dom;
 
 const commentDetailsList = document.querySelector('ul');
 
 describe('should count number of element in comment ', () => {
-  mockCommentData.forEach((element) => {
+  comments.forEach((element) => {
     const listItem = document.createElement('p');
     listItem.classList.add('popup-comments-item');
     listItem.innerText = `${element.creation_date} ${element.username} : ${element.comment}`;
