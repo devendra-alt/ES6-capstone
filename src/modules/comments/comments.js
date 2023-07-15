@@ -70,7 +70,9 @@ const renderCommentPopUp = async (meal, involvement) => {
   popUpEl.appendChild(await createCommentsEl(meal, involvement));
   popUpEl.appendChild(createNewComment(meal));
 
-  document.body.appendChild(popUpEl);
+  articleDiv.appendChild(popUpEl);
+  document.body.appendChild(articleDiv);
+  document.body.classList.add('popup-class');
 };
 
 export default renderCommentPopUp;
